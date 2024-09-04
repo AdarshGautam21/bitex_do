@@ -1,0 +1,249 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Bitex application programming interface (API) allows our clients to access and control their accounts, using custom written software. <br/> With the inclusion of the new currency pair, we've added new endpoints for some API calls (info about specific calls below). The old endpoints are still available and have not changed. We strongly suggest however, that you refer to the API for future references.",
+        "version": "1.0.0",
+        "title": "Bitex",
+        "termsOfService": "https://bitex.com/terms-of-service",
+        "contact": {
+        "email": "admin@bitex.com"
+    },
+    "license": {
+        "name": "Bitex API",
+        "url": "https://bitex.com/trust-and-security"
+    }
+    },
+    "host": "api.bitex.com",
+    "basePath": "/spot",
+    "tags": [
+        {
+            "name": "Trading",
+            "description": "Everything about trading",
+            "externalDocs": {
+                "description": "Find out more",
+                "url": "http://bitex.com"
+            }
+        }
+    ],
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "paths": {
+        "/summary": {
+            "get": {
+                "tags": [
+                    "Summary"
+                ],
+                "summary": "Get market data for tikers",
+                "description": "The summary endpoint is to provide an overview of market data for all tickers and all market pairs on the exchange",
+                "operationId": "spot.summary",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid input"
+                    }
+                },
+                "security": [
+                    {
+                        "petstore_auth": [
+                            "spot.summary"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/assets": {
+            "get": {
+                "tags": [
+                    "Assets"
+                ],
+                "summary": "Get details summary of each currency",
+                "description": "The assets endpoint is to provide a detailed summary for each currency available on the exchange.",
+                "operationId": "spot.assets",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid input"
+                    }
+                },
+                "security": [
+                    {
+                        "petstore_auth": [
+                            "spot.assets"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/ticker": {
+            "get": {
+                "tags": [
+                    "Tiker"
+                ],
+                "summary": "Get 24-hour pricing and volume summary for each market pair",
+                "description": "The ticker endpoint is to provide a 24-hour pricing and volume summary for each market pair available on the exchange.",
+                "operationId": "spot.ticker",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid input"
+                    }
+                },
+                "security": [
+                    {
+                        "petstore_auth": [
+                            "spot.ticker"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/orderbook/{market_pair}": {
+            "get": {
+                "tags": [
+                    "Orderbook"
+                ],
+                "summary": "Get complete order book",
+                "description": "The order book endpoint is to provide a complete order book with full depth returned for a given market pair.",
+                "operationId": "spot.orderbook",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "market_pair",
+                        "description": "Market pair (BTCUSD)",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid input"
+                    }
+                },
+                "security": [
+                    {
+                        "petstore_auth": [
+                            "spot.orderbook"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/trades/{market_pair}": {
+            "get": {
+                "tags": [
+                    "Trades"
+                ],
+                "summary": "Get data on all recently completed trades",
+                "description": "The trades endpoint is to return data on all recently completed trades for a given market pair.",
+                "operationId": "spot.trades",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "market_pair",
+                        "description": "Market pair (BTCUSD)",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid input"
+                    }
+                },
+                "security": [
+                    {
+                        "petstore_auth": [
+                            "spot.trades"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "securityDefinitions": {
+        "petstore_auth": {
+            "type": "oauth2",
+            "authorizationUrl": "http://api.bitex.net/api/auth/login",
+            "flow": "implicit",
+            "scopes": {
+                "write:pets": "modify pets in your account",
+                "read:pets": "read your pets"
+            }
+        },
+        "api_key": {
+            "type": "apiKey",
+            "name": "api_key",
+            "in": "header"
+        }
+    },
+    "definitions": {
+
+    },
+    "externalDocs": {
+        "description": "Find out more about Bitex",
+        "url": "http://bitex.com"
+    }
+}

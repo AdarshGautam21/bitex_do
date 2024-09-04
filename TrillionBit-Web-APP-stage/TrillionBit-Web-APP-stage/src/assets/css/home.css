@@ -1,0 +1,1515 @@
+.bglightgray {
+    background-color: #fefefe ;
+}
+
+a {
+    text-decoration: none;
+}
+
+.lighttoolbar {
+    display: none;
+}
+
+a:hover,
+a:focus,
+.MuiLink-underlineHover:hover{
+    text-decoration:none !important;
+    cursor: pointer;
+}
+
+
+.MuiGrid-spacing-xs-2 {
+    margin: 0 !important;
+}
+
+
+.homeLighttoolbar {
+    background-color: #074cc1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start !important;
+    padding: 0px 10px !important;
+    width: auto;
+    margin: 0;
+}
+
+
+.logoBox.otherPage {
+    display: none;
+}
+
+.homeLighttoolbar nav li,
+.lighttoolbar nav li {
+    display: inline !important;
+}
+
+.homeLighttoolbar nav li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s;
+    font-weight: 300;
+    /* font-size: 14px;  */
+}
+
+.mainNavBar.leftNev .inlineList .MuiListItemText-root .MuiTypography-body1 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.mainNavBar li a .MuiTypography-body2 {
+    font-size: 16px; 
+    font-weight: 400;
+}
+
+.homeLighttoolbar nav li a:hover {
+    color: #f79218;
+    transition: 0.4s;
+}
+
+
+.homeSubMenu .MuiPaper-root.MuiMenu-paper {
+    max-width: 100%;
+    top: 64px !important;
+    left: 0 !important;
+    right: 0 !important;
+    border-radius: 0;
+    border: none;/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#152f63+0,0a214f+100 */
+    background: rgb(21,47,99); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(21,47,99,1) 0%, rgba(10,33,79,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(21,47,99,1) 0%,rgba(10,33,79,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(21,47,99,1) 0%,rgba(10,33,79,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#152f63', endColorstr='#0a214f',GradientType=0 ); /* IE6-9 */ background-color: #142f65;
+}
+
+.homeSubMenu .MuiPaper-root.MuiMenu-paper ul {
+    padding: 0 0 40px 0;
+}
+.homeSubMenu .homeSubMenuList.products {
+    padding-left: 9%;
+}
+
+.homeSubMenu .homeSubMenuList.company {
+    padding-left: 16%;
+}
+
+.homeSubMenu .homeSubMenuList.support {
+    padding-left: 23%;
+}
+
+.homeSubMenu .homeSubMenuList ul li {
+    padding-left: 21px;
+}
+
+/* .homeSubMenu .homeSubMenuList.company ul li {
+    padding-left: 27px;
+} */
+
+.homeSubMenu .homeSubMenuList.support ul li {
+    padding-left: 18px;
+}
+
+.homeSubMenu .homeSubMenuList ul li a {
+    color: #eaeaea;
+    font-size: 14px;
+}
+
+.homeSubMenu .homeSubMenuList ul li a:hover {
+    color: #fff;
+}
+
+.homeSubMenu .homeSubMenuList:focus {
+    outline: none;
+}
+
+
+
+.bgblue {
+    background-color: #074cc1;
+}
+.slider{
+    background-color: #074cc1;
+    display: table;
+    width: 100%;
+}
+
+.sliderClient{
+    background-color: #fff;
+    display: table;
+    width: 100%;
+}
+
+.pageNotFound {
+    text-align: center;
+}
+
+.pageNotFound{
+    padding: 40px 0px 40px 0px;
+}
+
+.slider .slideText {
+    text-align: center;
+    padding: 80px 0px;
+}
+
+.sliderClient .slideText {
+    padding: 40px 0px 40px 0px;
+}
+
+.slideText h1, .pageNotFound h1{
+    font-size: 50px;
+    line-height: 65px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 25px;
+    letter-spacing: 0;
+}
+
+.slideText h1 span,
+.pageNotFound h1 span {
+    font-weight: 300;
+}
+
+
+.slideText .subtext, .pageNotFound .subtext{
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+}
+
+.slideText a, .pageNotFound a{
+    display: inline-block;
+    background-color: #F79218;
+    color: #fff;
+    padding: 14px 50px;
+    border-radius: 3px;
+    margin-top: 25px;
+}
+
+
+.CryptocurrencyWrapText {
+    padding: 15px 50px;
+    background-color: #fff;
+    
+}
+.CryptocurrencyWrapText .wrapInfo h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px 0;
+    text-transform: capitalize;
+    color: #283a5e;
+    text-align: center;
+}
+
+.CryptocurrencyWrapText .wrapInfo p {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 0px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #677286;
+    text-align: center;
+}
+
+
+/* CLient verification css */
+.pageNotFoundClient {
+    text-align: center;
+}
+
+.pageNotFoundClient{
+    padding: 40px 0px 40px 0px;
+}
+
+.pageNotFoundClient{
+    padding: 40px 0px 40px 0px;
+}
+
+.pageNotFoundClient h1{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+
+.pageNotFoundClient .subtext{
+    display: block;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 25px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+}
+
+.pageNotFoundClient a{
+    display: inline-block;
+    background-color: #152f63;
+    color: #fff;
+    padding: 14px 50px;
+    border-radius: 40px;
+    margin-top: 25px;
+}
+
+
+.slider .slideImg img{
+    width: 100%;
+    height: auto;
+    /* margin-bottom: -14px; */
+}
+
+.sliderClient .slideImg img{
+    width: 100%;
+    height: auto;
+    margin-bottom: -14px;
+}
+
+.announcement {
+    text-align: center;
+    padding: 25px 0 15px 0;
+}
+
+.announcement a {
+    font-size: 14px;
+    color: #677286;
+}
+
+
+.announcement a:hover,
+.announcement a:hover .MuiIconButton-root,
+.table .explore a:hover {
+    color: #f79218;
+}
+
+.announcement a span,
+.announcement a .MuiSvgIcon-root {
+    vertical-align: middle;
+    display: inline-block;
+}
+.announcement a button {
+    padding: 0;
+}
+
+.announcement a button:hover{
+    background-color: transparent;
+}
+.table{ 
+    border: 1px solid #f4f4f4;
+    background-color: #fff;
+}
+
+.tableResponsive {
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 40px;
+}
+
+.dataTable{
+    display: table;
+    width: 100%;
+    padding: 0 !important;
+}
+
+.dataTable li.MuiListItem-root{
+    display: table-row;
+    width: 100%;
+}
+.dataTable li.bodyRow:hover {
+    background-color: #fbfbfb;
+}
+
+
+.dataTable li.MuiListItem-root{
+    padding: 0;
+}
+
+.dataTable li .td{
+    display: table-cell;
+    vertical-align: middle;
+    border-bottom: 1px solid #f4f4f4;
+    box-sizing: border-box;
+    padding: 5px 10px; 
+    text-align: center; 
+    font-size: 14px;
+    color: #343434;
+}
+
+.dataTable li .td:nth-child(1),
+.dataTable li .td:nth-child(2){
+    width: 25%;
+}
+.dataTable li .td:nth-child(3),
+.dataTable li .td:nth-child(5){
+    width: 16%;
+}
+
+.dataTable li .td:nth-child(4){
+    width: 18%;
+}
+
+.dataTable li .td:nth-child(1) {
+    text-align: left;
+}
+
+
+
+.dataTable li .td img {
+    display: inline-block;
+    width: 32px;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 1px;
+    margin-right: 10px;
+    
+}
+
+.dataTable li .td .coinName {
+    display: inline-block;
+}
+
+.dataTable li .td .MuiTypography-root{
+    vertical-align: middle;
+}
+
+.dataTable li .td.red{
+    color: #da1515;
+}
+
+.dataTable li .td.green{
+    color: #12ba32;
+}
+
+.dataTable li .td a{
+    border: 1px solid #17294e;
+    color: #17294e;
+    padding: 6px 19px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.dataTable li .td .shortForm{
+    color: #9a9a9a;
+    margin-left: 15px;
+}
+
+
+
+.dataTable li.headRow{
+    background-color: #fbfbfb;
+}
+
+.tableSpace {
+    margin-bottom: 80px;
+}
+
+.table .explore{
+    padding: 28px 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.table .explore a {
+    font-size: 14px;
+    color: #17294e;
+}
+.fourBoxSection {
+    padding: 0px 0;
+}
+
+/* .fourBoxSection .wrapBox {
+    min-height: 320px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 20px;
+    border: 1px solid rgba(103,114,134,0.1);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 5px;
+    position: relative;
+    background-color: #fff;
+
+} */
+
+.fourBoxSection .wrapBox h5 {
+    text-align: right;
+    font-size: 35px;
+    color: #ddd;
+}
+
+.fourBoxSection .wrapBox .imgBox{
+    margin-top: -15px;
+}
+
+.wrapBox .imgBox img{
+    width: auto;
+}
+
+.fourBoxSection .wrapBox h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+    text-transform: capitalize;
+    color: #283a5e;
+}
+
+.fourBoxSection .wrapBox .subText{
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: #677286;
+}
+
+
+.fourBoxSection .wrapBox a{
+    display: inline-block;
+    padding: 9px 25px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 14px;
+    color: #1a2c50;
+}
+
+.fourBoxSection .wrapBox a:hover,
+.fourBoxSection .wrapBox a:focus{
+    background-color: #F79218;
+    border: 1px solid #F79218;
+    color: #fff;
+    text-decoration: none;
+    transition:  0.3s ease-in;
+    transition:  0.3s ease-out;
+    cursor: pointer;
+}
+
+.cryptocurrency .wrapTitle{
+    text-align: center;
+    padding: 60px 25px 25px 25px;
+}
+
+
+.cryptocurrency .wrapTitle h2 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #283a5e;
+}
+
+.cryptocurrency .wrapTitle span.text{
+    font-size: 14px;
+    margin: 8px 0;
+    display: block;
+    color: #677286;
+    font-weight: 300;
+}
+
+.cryptocurrency .adjustpadding{
+    padding: 50px 0;
+}
+
+.subSections {
+    padding: 50px 50px 15px 30px;
+}
+
+.subSections h3 {
+    font-size: 28px;
+    font-weight: 300;
+    color: #283a5e;
+    margin-bottom: 20px;
+}
+
+.subSections h3 strong {
+    font-weight: 600;
+}
+
+.subSections h6{
+    font-size: 16px;
+    font-weight: 400;
+    color: #677286;
+    margin-bottom: 20px;
+}
+
+.subSections a {
+    display: inline-block;
+    padding: 9px 25px;
+    border-radius: 25px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    
+}
+
+
+
+
+.cryptocurrency .WrapImg {
+    padding: 50px 0px;
+}
+
+.cryptocurrency .subSections {
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.cryptocurrency .experience {
+    display: table;
+    width: 100%;
+    margin: 15px 0;
+}
+.cryptocurrency .experience h5,
+.cryptocurrency .experience h6 {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 5px 0;
+    color: #f79218;
+}
+
+.cryptocurrency .experience h5 {
+    font-size: 40px;
+}
+
+.cryptocurrency .experience h6 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.roundBg {
+    background: url(../img/home/round.webp) repeat #152f63;
+    background-position: -13px 76px;
+    background-repeat: no-repeat;
+    background-size: 42%;
+}
+
+
+.investorSection {
+    background: url(../img/home/lines-abs.webp) repeat #f9f9f9;
+    background-position: center  center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+}
+
+
+.investorSection .inBox {
+    padding: 50px 50px 50px 30px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 30px;
+    margin: 20px 20px;
+    border-radius: 5px;
+}
+
+.investorSection .inBox img {
+    margin: 30px 0 15px 0;
+    width: auto;
+}
+
+.investorSection .inBox h3 {
+    font-size: 26px;
+    font-weight: 400;
+    color: #313131;
+    margin-bottom: 15px;
+}
+
+.investorSection .inBox h6 {
+    color: #8e8e8e;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.investorText h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #1a2c50;
+    line-height: 42px;
+}
+
+.investorText h6 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 30px 0;
+    color: #8e8e8e;
+}
+
+.investorText h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px 0;
+    color: #8e8e8e;
+}
+
+.investorText a{
+    background-color: #17294E;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+.oneCenterBox{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.marginBottom80{
+    margin-bottom: 80px !important;
+}
+
+
+.investorText {
+    padding: 105px 15px;
+}
+
+
+
+.applicationSec {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+
+.applicationSec .WrapImg{
+    padding: 0px 10px 0 10px;
+    margin-bottom: -13px;
+    text-align: center;
+}
+
+.applicationSec a{
+    margin-right: 15px;
+}
+
+
+.applicationSec a:hover{
+    background-color: #dbdee4;
+}
+
+.applicationSec a img{
+    vertical-align: middle;
+    margin-right: 15px;
+    width: auto;
+}
+
+
+.applicationSec .subSections a {
+    background-color: #171717;
+    color: #fff;
+    border-radius: 5px;
+    padding: 9px 18px;
+}
+
+.applicationSec .subSections a:hover {
+    background-color: #292929;
+}
+
+.applicationSec .subSections a span {
+    display: block;
+    text-align: left;
+}
+
+.applicationSec .subSections a span.small {
+    font-size: 8px;
+}
+
+.applicationSec .subSections .text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.featuredSection {
+    padding: 80px 0;
+    background-color: #f4f6f8;
+}
+.featuredSection .featuredText {
+    padding: 50px 90px 25px 0;
+}
+.featuredSection .featuredText h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px 0;
+    color: #17294E;
+}
+
+.featuredSection .featuredText h6 {
+    color: #8e8e8e;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.featuredSection .featuredText img {
+    margin-top: 20px;
+    width: auto;
+}
+
+
+.subscribeSection {
+    background: url(../img/home/subscribe-bg.webp) repeat #0b214e;
+    background-position: center  center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+}
+.subscribeText,
+.subscribeInput {
+    padding: 25px;
+}
+.subscribeText h6{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+
+.subscribeText h2{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.subscribeInput .MuiInput-root{
+    margin: 5px 0;
+    width: 75%;
+    outline: none !important;
+}
+
+.subscribeInput .MuiInputBase-input{
+    background-color: #fff;
+    border-radius: 40px;
+    padding-left: 25px;
+    height: 45px;
+}
+
+.subscribeInput .MuiInputLabel-formControl{
+    left: 12px;
+}
+
+
+.subscribeInput .MuiFormLabel-root.Mui-focused{
+    background-color: #fff;
+}
+
+.PrivateNotchedOutline-root-324,
+.MuiOutlinedInput-notchedOutline,
+.subscribeInput .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline,
+.subscribeInput .MuiInput-underline:after{
+    border: none !important;
+}
+
+
+.subscribeInput label{
+    color: #c2c2c2;
+}
+
+.subscribeInput .MuiButton-root{
+    background-color: #f79218;
+    padding: 17px 49px;
+    border-radius: 33px;
+    margin: -5px 0px 0px -69px;
+}
+
+.subscribeInput .MuiInput-underline:before,
+.subscribeInput .MuiInput-underline:hover:not(.Mui-disabled):before {
+    border: none;
+}
+
+
+.contactSection{
+    padding: 80px 0;
+    background-color: #f0f0f0;
+}
+
+.contactText{
+    text-align: center;
+}
+
+.contactText h3 {
+    font-size: 30px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.contactText h5 {
+    font-size: 18px;
+    color: #666666;
+    margin: 0px 0 35px 0;
+}
+
+.contactText h6 {
+    font-size: 14px;
+    font-weight: 300;
+    color: #666666;
+}
+
+
+.contactText .MuiInput-root {
+    display: flex;
+    width: 50%;
+    margin: 30px auto;
+    background: #fff;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.contactText .MuiInputBase-input {
+    height: 40px;    
+    padding: 5px 10px;
+}
+
+.contactText .MuiInput-underline:before {
+    border:none;
+    transition: none;
+}
+
+
+.contactText .MuiInput-underline:hover:not(.Mui-disabled):before,
+.contactText .MuiInput-underline:hover:not(.Mui-disabled):after {
+    border-bottom: 2px solid #303f9f !important;
+}
+
+
+.contactText .MuiFormLabel-root.Mui-focused{
+    background-color: #fff;
+}
+
+.contactText input {
+    background-color: #fff !important;
+    background: #fff !important;
+}
+
+.contactText .MuiInputBase-input:focus, 
+.contactText input:-webkit-autofill, 
+.contactText input:-webkit-autofill:hover, 
+.contactText input:-webkit-autofill:focus {
+    outline: 0;
+    background-color: #fff !important;
+    outline: none;
+    background-image: none !important;
+}
+
+
+.contactText .MuiButton-root{
+    background-color: #17294E;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 25px;
+}
+
+.footer {
+    background: url(../img/home/app-bg.webp) repeat #074cc1;
+    background-position: center  center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0 20px 0;
+}
+
+.footer .col-one h6 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #a0a8b9;
+    margin: 20px 0;
+}
+
+.footer .col-one .socialLink {
+    margin-left: 0px;
+}
+
+.footer .col-one img {
+    width: 160px;
+}
+
+.footer .col-one  .socialLink ul li {
+    display: inline;
+    padding: 5px;
+    margin: 0;
+}
+
+.footer .col-one  .socialLink ul li a{
+    color: #dbdee4;
+}
+
+.footer .col-list {
+    margin-bottom: 0px;
+    padding-left: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    padding: 0;
+}
+
+.footer .lastcolList .col-list {
+    display: block;
+    width: 100%;
+} 
+
+.footer .col-list h5 {
+    color: #fff;
+    font-size: 18px;
+}
+.footer .col-list ul li {
+    padding: 5px 15px 5px 0;
+}
+.footer .col-list ul li a{
+    color: #a0a8b9;
+    font-size: 14px;
+}
+
+.footer .col-list ul li a:hover {
+    color: #b6bcca;
+}
+
+.footer .col-list .MuiTypography-root.address{
+    color: #a0a8b9;
+    font-size: 14px;
+    padding: 15px;
+    display: block;
+}
+
+.copyRight{
+    background-color: #06132e;
+    padding: 5px;
+    text-align: center;
+}
+
+.copyRight h6{
+    font-size: 12px;
+    color: #a0a8b9;
+    font-weight: 300;
+}
+
+
+.featuredSection .carousel img,
+.featuredSection .carousel .slide img{
+    width: 54%;
+    margin-bottom: 25px;
+}
+
+.featuredSection .carousel .slide{
+    background: #fff;
+    padding: 70px 25px;
+}
+
+.featuredSection .carousel .slide h6 {
+    font-size: 18px;
+    color: #666666;
+    margin: 25px 0 61px 0;
+    font-weight: 400;
+}
+
+.featuredSection .carousel .slide a {
+    color: #f79218;
+}
+.featuredSection .carousel .thumbs-wrapper,
+.featuredSection .carousel .carousel-status{
+    display: none;
+}
+
+.featuredSection .carousel.carousel-slider{
+    border: 1px solid #f7f7f7;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 30px;
+}
+
+.featuredSection .sliderSection {
+    padding: 25px 85px;
+}
+
+.featuredSection .carousel .control-dots {
+    padding: 0;
+    margin: 20px 0;
+}
+.featuredSection .carousel .MuiTypography-colorPrimary {
+    color: #1a2c50;
+    font-size: 18px;
+}
+
+
+.featuredSection .carousel .control-dots .dot { 
+   
+    box-shadow: none;
+    width: 10px;
+    height: 10px;
+    margin: 0 6px;
+    background-color: #1a2c50;
+}
+
+.dataTable li .td p {
+    font-size: 17px;
+}
+
+.dataTable li .td .apexcharts-canvas{
+    width: 100% !important;
+}
+
+.dataTable li.headRow .td {
+    padding: 15px;
+}
+
+
+.homeLighttoolbar nav li .userbox {
+    display: inline-block;
+}
+
+.homeLighttoolbar nav li .MuiButton-root {
+    padding: 0;
+}
+
+.homeLighttoolbar nav li .MuiAvatar-root {
+    width: 25px;
+    height: 25px;
+}
+
+@media (max-width:767px) {
+
+    .homeLighttoolbar,
+    .lighttoolbar {
+        width: 100%;
+    }
+
+    .footer .col-one img {
+        width: 40%;
+    }
+
+    .footer .col-list {
+        padding-left: 0;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .lighttoolbar .logoBox img,
+    .homeLighttoolbar .logoBox img {
+        max-width: 109px !important;
+    }
+
+    .MuiList-root.mainNavBar  {
+        display: none;
+    }
+
+    
+
+    .mobileMenu .MuiSvgIcon-root {
+        color: #fff;
+    }
+
+    .slider .slideText, .slider .slideImg {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+    }
+
+    .slider .slideImg {
+        padding:0 10px 45px 10px !important;
+    }
+
+    /* .slider .slideImg img{
+        margin: 0 0 -10px 0;
+    } */
+
+    .sliderClient .slideText, .slider .slideImg {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+    }
+
+    .sliderClient .slideImg img{
+        margin: 0 0 -10px 0;
+    }
+
+    .slideText a {
+        text-align: center;
+    } 
+
+    .slider .slideText {
+        padding: 40px 0px;
+    }
+
+    .sliderClient .slideText {
+        padding: 40px 0px;
+    }
+
+    .slideText h1 {
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+   
+
+    .slideText .subtext {
+        font-size: 14px;
+    }
+    .cryptocurrency .WrapImg img,
+    .applicationSec .WrapImg img{
+        width: 100%;
+        height: auto;
+    }
+
+    .fourBoxSection .wrapBox {
+        margin: 0;
+    }
+
+    .MuiContainer-root{
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .MuiGrid-spacing-xs-2{
+        width: 100% !important;
+    }
+
+    .cryptocurrency .wrapTitle{
+        padding: 40px 5px;
+        text-align: left;
+    }
+
+    .CryptocurrencyWrapText .wrapInfo h1,
+    .cryptocurrency .wrapTitle h2{ 
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .cryptocurrency .wrapTitle span.text{
+        line-height: 20px;
+    }
+
+
+    .cryptocurrency .subSections,
+    .applicationSec .subSections {
+        padding: 0px 5px;
+    }
+
+    .investorText h2,
+    .featuredText h2,
+    .subSections h3,
+    .investorSection .inBox h3 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .cryptocurrency .experience h6,
+    .investorText h6{
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .investorText h4{
+        font-size: 16px;
+    }
+
+    .cryptocurrency .adjustpadding {
+        padding: 0px 0 50px 0;
+    }
+
+    .flexRevers{
+        flex-flow: column-reverse;
+    }
+
+    .investorSection,
+    .featuredSection,
+    .contactSection{
+        padding: 40px 0;
+    }
+
+    .applicationSec a{
+        margin: 10px 0;
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+
+    .investorText{
+        padding: 05px 15px;
+    }
+    .applicationSec{
+        padding: 40px 0 0 0;
+    }
+
+    .featuredSection .featuredText {
+        padding: 8px;
+        text-align: center;
+    }
+
+    .subscribeText, .subscribeInput{
+        padding: 5px;
+        text-align: center;
+    }
+
+    .subscribeInput .MuiButton-root{
+        margin:0;
+    }
+
+    .subscribeInput .MuiInput-root,
+    .contactText .MuiInput-root{
+        width: 100%;
+    }
+
+    .table {
+        border: none;
+    }
+
+    .dataTable li .td {
+        /* white-space: nowrap; */
+        padding: 15px 5px;
+        /* font-size: 12px; */
+    }
+
+    .dataTable li .td p {
+        font-size: 13px;
+    }
+
+
+    .dataTable li .td .apexcharts-canvas{
+        width: 100% !important;
+    }
+
+    .dataTable li .td img {
+        width: 25px;
+        margin: 0px 6px 0px 0;
+        display: inline-block;
+    }
+
+    .dataTable li .td .coinName {
+        vertical-align: middle;
+        width: 60%;
+    }
+
+    .dataTable li .td .shortForm {
+        color: #9a9a9a;
+        margin-left: 0px;
+        display: block;
+    }
+
+    
+
+    .dataTable li .td:nth-child(4),
+    .dataTable li .td:nth-child(5) {
+        display: none;
+    }
+
+    .featuredSection .sliderSection {
+        padding: 0;
+    }
+
+    .investorSection .inBox {
+        margin: 20px 5px;
+    }
+
+    .marginBottom80 {
+        margin-bottom: 60px !important;
+    }
+
+    .contactText h3 {
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+
+    .contactText h5 {
+        font-size: 14px;
+    }
+
+    .announcement{
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .oneCenterBox {
+        display: block;
+        justify-content: unset;
+        align-items: unset;
+    }
+
+}
+
+@media (min-width:375px) and  (max-width:424px){
+
+    .dataTable li .td:nth-child(1), .dataTable li .td:nth-child(2) {
+        width: 30%;
+    }
+
+}
+
+@media (min-width:768px) and  (max-width:991px){
+    .MuiContainer-root{
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .MuiGrid-spacing-xs-2{
+        width: 100% !important;
+    }
+
+    .slider .slideText {
+        padding: 5px 20px 0px 0px;
+    }
+
+    .sliderClient .slideText {
+        padding: 5px 20px 0px 0px;
+    }
+    
+
+    .slideText h1 {
+        font-size: 26px;
+        line-height: 35px;
+        margin: 0 0 5px 0;
+    }
+
+    .slideText .subtext {
+        font-size: 14px;
+    }
+
+    .slideText a {
+        font-size: 14px;
+        padding: 9px 33px;
+        margin: 0;
+    }
+
+    
+
+    .analyseSec .analyseImage {
+        margin: 0;
+    }
+
+    .analyseSec .analyseImage img {
+        width: 100%;
+    }
+
+    .subSections h6 {
+        margin-bottom: 10px;
+        padding: 0;
+    }
+
+    .cryptocurrency .experience h6 {
+        padding: 0;
+    }
+
+
+    .cryptocurrency .adjustpadding {
+        padding: 0;
+    }
+
+    .cryptocurrency .wrapTitle{
+        padding: 0px 25px;
+        margin: 50px 0;
+    }
+
+ 
+
+    .cryptocurrency {
+        padding: 25px 0;
+    }
+
+    .cryptocurrency  .WrapImg{
+        text-align: center;
+    }
+
+  
+
+    .contactText .MuiInput-root{
+        width: 100%;
+    }
+
+    .col-one img {
+        width: 100%;
+    }
+
+    .subscribeText, .subscribeInput{
+        text-align: center;
+    }
+
+    .contactText{
+        padding: 0 50px;
+    }
+
+    .dataTable li .td:nth-child(1), .dataTable li .td:nth-child(2) {
+        width: 27%;
+    }
+
+    .dataTable li .td:nth-child(4) {
+        width: 14%;
+    }
+
+    .mobileMenu {
+        display: block;
+    }
+
+
+    .applicationSec {
+        padding: 25px 0 50px 0;
+    }
+
+    .applicationSec .wrapBox {
+        width: 45%;
+        display: inline-block;
+        padding: 3px 15px;
+        vertical-align: top;
+    }
+
+}
+
+
+
+
+@media (max-width:992px)  {
+    #mobile-menu .MuiMenu-paper {
+        background-color: #074cc1;
+        position: absolute !important;
+        right: 0 !important;
+        top: 0px !important;
+        left: 0 !important;
+        text-align: center;
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    #mobile-menu .MuiMenu-paper p {
+        text-align: right;
+        color: white;
+        position: absolute;
+        right: 16px;
+        top: 17px;
+        z-index: 100;
+    }
+
+    #mobile-menu .MuiMenu-paper ul {
+        padding: 20px 0 0 0;
+    }
+
+    #mobile-menu .MuiListItem-root {
+        text-align: center;
+        color: #fff;
+        height: 40px;
+    }
+
+    #mobile-menu .MuiList-root.subMenu {
+        background-color: #17294e;
+    }
+
+    #mobile-menu .MuiList-root.subMenu li {
+        padding: 8px 20px 8px 27px;
+    }
+
+
+
+    #mobile-menu .MuiListItem-root .MuiListItemText-root {
+        flex: none;
+        margin: 0;
+    }
+
+    #mobile-menu a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .dataTable li .td p {
+        font-size: 14px;
+    }
+}

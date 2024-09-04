@@ -1,0 +1,20 @@
+.bottom-to-top-enter {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  
+  .bottom-to-top-enter-active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .bottom-to-top-exit {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .bottom-to-top-exit-active {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  

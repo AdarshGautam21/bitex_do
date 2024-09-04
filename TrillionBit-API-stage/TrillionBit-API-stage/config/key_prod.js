@@ -1,0 +1,17 @@
+module.exports = {
+  mongoURI: `mongodb://${process.env.MONGO_USER}:${encodeURIComponent(process.env.MONGO_PASS)}@${process.env.MONGO_HOST}:${process.env.MONGO_PORT}/${process.env.MONGO_DB}?authSource=admin`,
+  // mongoURI: `mongodb://${process.env.MONGO_HOST}:${process.env.MONGO_PORT}/${process.env.MONGO_DB}`,
+  secretKey: process.env.SECRET_OR_KEY,
+  hostURI: process.env.SERVER_URI,
+  bitgoAccessKey: process.env.BITGO_ACCESS_KEY,
+  bitgoCoin: process.env.BITGO_BTC,
+  bitgoDepositeWallet: process.env.BITGO_DEPOSIT_WALLET,
+  tradingURI: process.env.TRADING_URI,
+  onfidoAPI: process.env.ONFIDO_API,
+  tronAPI: process.env.TRON_API,
+  privateKey: process.env.TRON_PRIVATE_KEY,
+  btxPrivateKey: process.env.BTX_PRIVATE_KEY,
+  btxFromAddress: process.env.BTX_FROM_ADD,
+  btxContractAddress: process.env.BTX_CONTRACT_ADD,
+  etherScanKey: process.env.ETH_SCAN_KEY,
+};

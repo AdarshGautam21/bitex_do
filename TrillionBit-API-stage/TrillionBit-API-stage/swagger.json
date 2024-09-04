@@ -1,0 +1,1015 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Bitex application programming interface (API) allows our clients to access and control their accounts, using custom written software. <br/> With the inclusion of the new BTC/AED currency pair, we've added new endpoints for some API calls (info about specific calls below). The old endpoints are still available and have not changed. We strongly suggest however, that you refer to the API for future references.",
+        "version": "1.0.0",
+        "title": "Bitex",
+        "termsOfService": "http://bitex.com",
+        "contact": {
+        "email": "admin@bitex.com"
+    },
+    "license": {
+        "name": "Bitex API",
+        "url": "http://bitex.com"
+    }
+    },
+    "host": "api.bitex.com",
+    "basePath": "/api",
+    "tags": [
+        {
+            "name": "User",
+            "description": "Everything about trading",
+            "externalDocs": {
+                "description": "Find out more",
+                "url": "http://bitex.com"
+            }
+        },
+        {
+            "name": "Assets",
+            "description": "Everything about trading",
+            "externalDocs": {
+                "description": "Find out more",
+                "url": "http://bitex.com"
+            }
+        },
+        {
+            "name": "Balance",
+            "description": "Everything about trading",
+            "externalDocs": {
+                "description": "Find out more",
+                "url": "http://bitex.com"
+            }
+        },
+        {
+            "name": "Trading",
+            "description": "Everything about trading",
+            "externalDocs": {
+                "description": "Find out more",
+                "url": "http://bitex.com"
+            }
+        },
+        {
+            "name": "Market",
+            "description": "Everything about market trading",
+            "externalDocs": {
+                "description": "Find out more",
+                "url": "http://bitex.com"
+            }
+        }
+    ],
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "paths": {
+        "/auth/login": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "User login.",
+                "description": "User login",
+                "operationId": "user.login",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "User login",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/UserLogin"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid input"
+                    }
+                },
+                "security": [
+                    {
+                        "petstore_auth": [
+                            "user.login"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/auth/register": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Register user.",
+                "description": "Register user.",
+                "operationId": "user.register",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "User register",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/UserRegister"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid input"
+                    }
+                },
+                "security": [
+                    {
+                        "petstore_auth": [
+                            "user.register"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/trading/asset/lists": {
+            "post": {
+                "tags": [
+                    "Assets"
+                ],
+                "summary": "Get assets lists.",
+                "description": "Get assets lists",
+                "operationId": "asset.list",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Get assets lists",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {}
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid input"
+                    }
+                },
+                "security": [
+                    {
+                        "petstore_auth": [
+                            "asset.list"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/trading/order/depth": {
+            "post": {
+                "tags": [
+                    "Trading"
+                ],
+                "summary": "Order depth.",
+                "description": "",
+                "operationId": "order.depth",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "order depth list",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/OrderDepth"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/OrderDepth"
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid input"
+                    }
+                },
+                "security": [
+                    {
+                        "petstore_auth": [
+                            "read:order"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/trading/order/limit": {
+            "post": {
+                "tags": [
+                    "Trading"
+                ],
+                "summary": "Place limit order.",
+                "description": "Place limit order",
+                "operationId": "order.put_limit",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Place limit order",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/OrderLimit"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/OrderLimit"
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid input"
+                    }
+                },
+                "security": [
+                    {
+                        "petstore_auth": [
+                            "create:order"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/trading/order/market": {
+            "post": {
+                "tags": [
+                    "Trading"
+                ],
+                "summary": "Place maket order.",
+                "description": "Place market order",
+                "operationId": "order.put_market",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Place market order",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/OrderMarket"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/OrderMarket"
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid input"
+                    }
+                },
+                "security": [
+                    {
+                        "petstore_auth": [
+                            "create:order"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/trading/order/cancel": {
+            "post": {
+                "tags": [
+                    "Trading"
+                ],
+                "summary": "Cancel order.",
+                "description": "Cancel order",
+                "operationId": "order.cancel",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Cancel order",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/OrderCancel"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/OrderCancel"
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid input"
+                    }
+                },
+                "security": [
+                    {
+                        "petstore_auth": [
+                            "create:order"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/trading/order/deals": {
+            "post": {
+                "tags": [
+                    "Trading"
+                ],
+                "summary": "Get order details.",
+                "description": "Get order details",
+                "operationId": "order.deals",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Get order details",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "user_id": {
+                                    "type": "integer",
+                                    "format": "int64"
+                                },
+                                "offset": {
+                                    "type": "integer",
+                                    "format": "int64"
+                                },
+                                "limit": {
+                                    "type": "integer",
+                                    "format": "int64"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid input"
+                    }
+                },
+                "security": [
+                    {
+                        "petstore_auth": [
+                            "create:order"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/trading/order/book": {
+            "post": {
+                "tags": [
+                    "Trading"
+                ],
+                "summary": "Get order book.",
+                "description": "Get order book",
+                "operationId": "order.book",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Get order book",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "market": {
+                                    "type": "string"
+                                },
+                                "side": {
+                                    "type": "integer",
+                                    "format": "int64"
+                                },
+                                "offset": {
+                                    "type": "integer",
+                                    "format": "int64"
+                                },
+                                "limit": {
+                                    "type": "integer",
+                                    "format": "int64"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid input"
+                    }
+                },
+                "security": [
+                    {
+                        "petstore_auth": [
+                            "create:order"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/trading/order/pending": {
+            "post": {
+                "tags": [
+                    "Trading"
+                ],
+                "summary": "Get order pending.",
+                "description": "Get order pending",
+                "operationId": "order.pending",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Get order pending",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "user_id": {
+                                    "type": "integer",
+                                    "format": "int64"
+                                },
+                                "market": {
+                                    "type": "string"
+                                },
+                                "offset": {
+                                    "type": "integer",
+                                    "format": "int64"
+                                },
+                                "limit": {
+                                    "type": "integer",
+                                    "format": "int64"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid input"
+                    }
+                },
+                "security": [
+                    {
+                        "petstore_auth": [
+                            "create:order"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/trading/order/pending_detail": {
+            "post": {
+                "tags": [
+                    "Trading"
+                ],
+                "summary": "Get order pending detail.",
+                "description": "Get order pending detail",
+                "operationId": "order.pending_detail",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Get order pending detail",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "market": {
+                                    "type": "string"
+                                },
+                                "order_id": {
+                                    "type": "integer",
+                                    "format": "int64"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid input"
+                    }
+                },
+                "security": [
+                    {
+                        "petstore_auth": [
+                            "create:order"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/trading/order/finished": {
+            "post": {
+                "tags": [
+                    "Trading"
+                ],
+                "summary": "Get order finished.",
+                "description": "Get order finished",
+                "operationId": "order.finished",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Get order finished",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "user_id": {
+                                    "type": "integer",
+                                    "format": "int64"
+                                },
+                                "market": {
+                                    "type": "string"
+                                },
+                                "start_time": {
+                                    "type": "integer",
+                                    "format": "int64"
+                                },
+                                "end_time": {
+                                    "type": "integer",
+                                    "format": "int64"
+                                },
+                                "offset": {
+                                    "type": "integer",
+                                    "format": "int64"
+                                },
+                                "limit": {
+                                    "type": "integer",
+                                    "format": "int64"
+                                },
+                                "side": {
+                                    "type": "integer",
+                                    "format": "int64"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid input"
+                    }
+                },
+                "security": [
+                    {
+                        "petstore_auth": [
+                            "create:order"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/trading/order/finished_detail": {
+            "post": {
+                "tags": [
+                    "Trading"
+                ],
+                "summary": "Get order finished_detail.",
+                "description": "Get order finished_detail",
+                "operationId": "order.finished_detail",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Get order finished_detail",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "order_id": {
+                                    "type": "integer",
+                                    "format": "int64"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid input"
+                    }
+                },
+                "security": [
+                    {
+                        "petstore_auth": [
+                            "create:order"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/trading/order/market_last": {
+            "post": {
+                "tags": [
+                    "Market"
+                ],
+                "summary": "Get order market_last.",
+                "description": "Get order market_last",
+                "operationId": "order.market_last",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Get order market_last",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "market": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid input"
+                    }
+                },
+                "security": [
+                    {
+                        "petstore_auth": [
+                            "create:order"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/trading/order/market_deals": {
+            "post": {
+                "tags": [
+                    "Market"
+                ],
+                "summary": "Get order market_deals.",
+                "description": "Get order market_deals",
+                "operationId": "order.market_deals",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Get order market_deals",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "market": {
+                                    "type": "string"
+                                },
+                                "limit": {
+                                    "type": "integer",
+                                    "format": "int64"
+                                },
+                                "last_id": {
+                                    "type": "integer",
+                                    "format": "int64"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid input"
+                    }
+                },
+                "security": [
+                    {
+                        "petstore_auth": [
+                            "create:order"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "securityDefinitions": {
+        "petstore_auth": {
+            "type": "oauth2",
+            "authorizationUrl": "http://api.bitex.com/api/auth/login",
+            "flow": "implicit",
+            "scopes": {
+                "write:pets": "modify pets in your account",
+                "read:pets": "read your pets"
+            }
+        },
+        "api_key": {
+            "type": "apiKey",
+            "name": "api_key",
+            "in": "header"
+        }
+    },
+    "definitions": {
+        "UserLogin": {
+            "type": "object",
+            "properties": {
+                "email": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                },
+                "userDevice": {
+                    "type": "object"
+                }
+            }
+        },
+        "UserRegister": {
+            "type": "object",
+            "properties": {
+                "firstname": {
+                    "type": "string"
+                },
+                "lastname": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "phone": {
+                    "type": "string",
+                    "example": "+91 9876543210"
+                },
+                "password": {
+                    "type": "string"
+                },
+                "password2": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "string",
+                    "example": "IN"
+                }
+            }
+        },
+        "OrderDepth": {
+            "type": "object",
+            "properties": {
+                "market": {
+                    "type": "string"
+                },
+                "limit": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "interval": {
+                    "type": "string"
+                }
+            }
+        },
+        "OrderLimit": {
+            "type": "object",
+            "properties": {
+                "user_id": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "market": {
+                    "type": "string"
+                },
+                "side": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "amount": {
+                    "type": "string"
+                },
+                "price": {
+                    "type": "string"
+                },
+                "taker_fee_rate": {
+                    "type": "string"
+                },
+                "maker_fee_rate": {
+                    "type": "string"
+                },
+                "source": {
+                    "type": "string"
+                }
+            }
+        },
+        "OrderMarket": {
+            "type": "object",
+            "properties": {
+                "user_id": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "market": {
+                    "type": "string"
+                },
+                "side": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "amount": {
+                    "type": "string"
+                },
+                "taker_fee_rate": {
+                    "type": "string"
+                },
+                "source": {
+                    "type": "string"
+                }
+            }
+        },
+        "OrderCancel": {
+            "type": "object",
+            "properties": {
+                "user_id": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "market": {
+                    "type": "string"
+                },
+                "order_id": {
+                    "type": "integer",
+                    "format": "int64"
+                }
+            }
+        }
+    },
+    "externalDocs": {
+        "description": "Find out more about Bitex",
+        "url": "http://bitex.com"
+    }
+}

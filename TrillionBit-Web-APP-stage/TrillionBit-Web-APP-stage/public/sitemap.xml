@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://trillionbit.com/</loc>
+  <lastmod>2020-04-16T09:45:10+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+
+<url>
+  <loc>https://trillionbit.com/login</loc>
+  <lastmod>2020-04-16T09:45:10+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+
+<url>
+  <loc>https://trillionbit.com/register</loc>
+  <lastmod>2020-04-16T09:45:10+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+
+<url>
+  <loc>https://trillionbit.com/trading</loc>
+  <lastmod>2020-04-16T09:45:10+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+
+<url>
+  <loc>https://trillionbit.com/trading/BTC</loc>
+  <lastmod>2020-04-16T09:45:10+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+
+<url>
+  <loc>https://trillionbit.com/trading/BCH</loc>
+  <lastmod>2020-04-16T09:45:10+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+
+<url>
+  <loc>https://trillionbit.com/trading/LTC</loc>
+  <lastmod>2020-04-16T09:45:10+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+
+<url>
+  <loc>https://trillionbit.com/trading/XRP</loc>
+  <lastmod>2020-04-16T09:45:10+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+
+<url>
+  <loc>https://trillionbit.com/trading/ETD</loc>
+  <lastmod>2020-04-16T09:45:10+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+
+<url>
+  <loc>https://trillionbit.com/fees</loc>
+  <lastmod>2020-04-16T09:45:10+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+
+<url>
+  <loc>https://trillionbit.com/referral-info</loc>
+  <lastmod>2020-04-16T09:45:10+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+
+<url>
+  <loc>https://trillionbit.com/terms-of-service</loc>
+  <lastmod>2020-04-16T09:45:10+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+
+<url>
+  <loc>https://trillionbit.com/trust-and-security</loc>
+  <lastmod>2020-04-16T09:45:10+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+
+<url>
+  <loc>https://trillionbit.com/about</loc>
+  <lastmod>2020-04-16T09:45:10+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+
+<url>
+  <loc>https://trillionbit.com/btxCoin</loc>
+  <lastmod>2020-03-16T09:45:10+00:00</lastmod>
+  <changefreq>hourly</changefreq>
+</url>
+
+</urlset>

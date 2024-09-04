@@ -1,0 +1,36 @@
+providers = []
+buildImage = 'ghcr.io/railwayapp/nixpacks:ubuntu-1690243402'
+
+[variables]
+CI = 'false'
+NIXPACKS_METADATA = 'node'
+NODE_ENV = 'production'
+NODE_OPTIONS = '--openssl-legacy-provider' 
+NPM_CONFIG_PRODUCTION = 'false'
+[phases.build]
+dependsOn = ['install']
+cmds = ['npm run build']
+cacheDirectories = ['node_modules/.cache']
+
+[phases.install]
+dependsOn = ['setup']
+cmds = ['npm install -legacy-peer-deps --omit=dev']
+cacheDirectories = ['/root/.npm']
+paths = ['/app/node_modules/.bin']
+
+[phases.setup]
+nixPkgs = [
+    'nodejs-16_x',
+    'npm-9_x',
+    'python3',
+    'gcc'
+]
+nixLibs = [
+    'libuuid',
+    'libGL',
+]
+nixOverlays = ['https://github.com/railwayapp/nix-npm-overlay/archive/main.tar.gz']
+nixpkgsArchive = '293a28df6d7ff3dec1e61e37cc4ee6e6c0fb0847'
+
+[start]
+cmd = 'npm run start-prod'

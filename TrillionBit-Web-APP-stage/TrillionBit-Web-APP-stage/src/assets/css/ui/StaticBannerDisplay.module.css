@@ -1,0 +1,31 @@
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; /* Prevent wrapping to a new line */
+    gap: 20px; /* Adjust the gap between items as needed */
+}
+
+.item {
+    padding: 10px;
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the flex-basis to account for the gap */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: center;
+    max-width: 400px; /* Maximum width of each item */
+}
+
+/* Adjust item size for smaller screens */
+@media (max-width: 768px) {
+    .flexContainer {
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    }
+    .item {
+        flex: 0 0 50%; /* Two items per row on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .item {
+        flex: 0 0 100%; /* Full width on extra small screens */
+    }
+}

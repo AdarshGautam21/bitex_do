@@ -1,0 +1,14 @@
+/node_modules
+package-lock.json
+.vscode
+.DS_Store
+.env
+
+Bitex_API/
+Bitex_Admin/
+bitexuae_web_app/
+bitexuae_web_admin/
+storage/
+config/key_dev.js
+
+.eslintcache

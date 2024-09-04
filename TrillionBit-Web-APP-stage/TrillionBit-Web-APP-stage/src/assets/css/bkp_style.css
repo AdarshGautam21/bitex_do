@@ -1,0 +1,3634 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700&display=swap');
+
+body {
+    background-color: #f4f6f8;
+    font-family: 'IBM Plex Sans', sans-serif !important;
+    position: relative;
+}
+
+
+
+/* total width */
+::-webkit-scrollbar {
+    /* background-color:#fff; */
+    width:0px;
+    height: 0px;
+}
+
+/* background of the scrollbar except button or resizer */
+::-webkit-scrollbar-track {
+    background-color:#fff;
+}
+
+/* scrollbar itself */
+::-webkit-scrollbar-thumb {
+    background-color:#babac0;
+    border-radius:16px;
+    border:1px solid #fff;
+}
+
+/* set button(top and bottom of the scrollbar) */
+::-webkit-scrollbar-button {display:none}
+
+
+.tradeBody ::-webkit-scrollbar {
+    /* background-color:#fff; */
+    width:6px;
+}
+
+.tradeBody ::-webkit-scrollbar-track {
+    background-color:transparent;
+}
+
+.tradeBody ::-webkit-scrollbar-thumb {
+    background-color:rgb(12, 13, 14);
+    border-radius:16px;
+    border:1px solid rgb(12, 13, 14);
+}
+
+
+.paddingAll15 {
+    padding: 15px !important;
+}
+.paddingTB15 {
+    padding: 0 0 20px 0px !important;
+}
+
+.marginBottom25 {
+    margin-bottom: 25px;
+}
+
+.width100 {
+    width: 100%;
+}
+
+.paddingTopbody {
+    padding-top: 100px;
+}
+
+.paddingTopbody2 {
+    padding-top: 60px;
+}
+
+.paddingTopLandingbody {
+    padding-top: 60px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.bg-white {
+    background-color: #fff !important;
+}
+
+.MuiTypography-h1,
+.MuiTypography-h2,
+.MuiTypography-h3,
+.MuiTypography-h4,
+.MuiTypography-h5,
+.MuiTypography-h6,
+span,
+p{
+    font-family: 'IBM Plex Sans', sans-serif !important;
+}
+
+.MuiPaper-root{
+    color: #444444;     
+}
+
+.mainbody {
+    height: 100%;
+}
+
+.mainbody.MuiContainer-maxWidthLg{
+    padding: 10px 0px 15px 0;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+
+.logoutBtn.tradeBTN .MuiPaper-root {
+    background-color: #313337;
+}
+
+.logoutBtn .MuiPaper-root {    
+    background-color: #0d1a35;
+    border-radius: 0;
+    color: #ffff;
+    width: 153px;
+    right: 3px !important;
+    /* top: 112px !important; */
+    left: auto !important;
+}
+
+.logoutBtn .MuiPaper-root ul li{
+    text-align: center;
+    min-height: auto;
+    justify-content: center;
+    font-size: 14px;
+    padding: 8px 0px;
+}
+
+
+.MuiGrid-item{
+    padding: 10px
+}
+
+.MuiAppBar-positionFixed .MuiButton-containedPrimary,
+.MuiAppBar-positionFixed .MuiButton-containedPrimary:hover{
+    background-color: transparent;
+    box-shadow: none;
+    color:#ff8400;
+}
+
+.MuiAppBar-positionFixed .MuiButton-containedPrimary .MuiSvgIcon-root {
+    vertical-align: bottom;
+    height: 24px;
+    line-height: 24px;
+}
+
+.mainbody.transactions {
+    margin-top: 20px;
+}
+
+.mainbody .MuiButton-containedPrimary{
+    background-color: #17294e;
+}
+
+.mainbody .MuiButton-containedPrimary:hover {
+    background-color: #1b3a79;
+}
+
+.mainbody .MuiButton-containedSecondary {
+    background-color: #fff;
+    color: #444444;
+}
+
+.mainbody .MuiButton-containedSecondary:hover {
+    background-color: rgb(224, 224, 224);
+    color: #444444;
+}
+
+
+.darktoolbar {
+    background-color: #17294E;
+    min-height: 30px !important;
+    justify-content: space-between;
+}
+
+ .MuiAppBar-positionFixed .userbox .MuiButton-containedPrimary,f
+ .MuiAppBar-positionFixed .userbox .MuiButton-containedPrimary:hover{
+    color: #fff;
+}
+
+.MuiAppBar-positionFixed .userbox .MuiTypography-root {
+    padding-left: 10px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.lighttoolbar {
+    background-color: #fff;
+    min-height: auto !important;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px !important;
+}
+
+.signupFormField1 {
+    padding-left: 0;
+}
+
+.signupFormField2 {
+    padding-right: 0;
+}
+
+
+.lighttoolbar .MuiList-padding{
+    padding: 0;
+}
+
+.darktoolbar .currnecy,
+.darktoolbar .cValue{
+    font-size: 14px;
+    display:inline-block;
+}
+
+.darktoolbar .currnecy{
+    color:#6d81ab;
+}
+
+.darktoolbar .cValue {
+    padding-left: 8px;
+    color: #ccc;
+}
+
+.lighttoolbar nav {
+    display: flex;
+    padding: 0;
+}
+
+.lighttoolbar .logoBox img {
+    max-width: 140px;
+}
+
+.homeLighttoolbar .logoBox img {
+    max-width: 160px;
+}
+
+.lighttoolbar nav li.listItem {
+    display: inline-flex;
+    padding: 20px 25px;
+}
+
+.homeLighttoolbar nav li.listItem {
+    padding: 0px 10px 0 29px;
+}
+
+.lighttoolbar nav li.active a {
+    color:#ff8400;
+}
+
+.lighttoolbar nav li a {
+    color:#444444;
+    text-decoration: none;
+}
+
+
+
+.lighttoolbar nav li.active {
+    border-bottom: 3px solid #ff8400;
+
+}
+
+.mainbody .MuiGrid-spacing-xs-2 > .MuiGrid-item {
+    padding: 15px 10px;
+}
+
+.mainbody .dataListCard, .mainbody .MuiPaper-elevation2 {
+    /* box-shadow: 0 0 0 1px rgba(63,63,68,0.05), 0 1px 3px 0 rgba(63,63,68,0.15); */
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 20px;
+    border-radius: 6px;
+    min-height: 395px;
+    overflow-y: auto;
+}
+
+.deposite-box {
+    max-height: 340px;
+    overflow: auto;
+}
+
+.mainbody .dataListCard .MuiCardHeader-root {
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    padding: 8px 10px;
+    align-items: center;
+}
+
+.mainbody .dataListCard .MuiTypography-displayBlock {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.mainbody .dataListCard .MuiCardHeader-action .MuiIconButton-root {
+    padding: 5px;
+    font-size: 1.125rem;
+    margin-top: 6px;
+}
+
+.mainbody .dataListCard .MuiCardContent-root,
+.mainbody .dataListCard .MuiList-padding {
+    padding: 0;
+    max-height: 348px;
+    overflow: auto;
+}
+
+.mainbody .dataListCard .MuiListItemText-root {
+    margin: 0 5px 0 0;
+    width: 80%;
+}
+
+.mainbody .dataListCard .MuiListItemText-root span {
+    font-size: 14px;
+}
+
+.mainbody .dataListCard .MuiListItem-alignItemsFlexStart {
+    align-items: center;
+    padding: 7px;
+    border-bottom: 1px solid #ddd;
+}
+
+.mainbody .dataListCard ul li .date{
+    font-size: 12px;
+    width: 20%;
+    text-align: right;
+    color: #8e8e8e;
+}
+
+
+
+.profileSection h5{
+    font-size: 20px;
+}
+
+
+.profileSection h6{
+    font-size: 14px;
+    font-weight: 400 !important;
+    color: #8e8e8e;
+}
+.traderBox h6 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.traderSection {
+    padding: 28px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.traderSection .traderBox h5 {
+    font-size: 20px;
+    margin: 0 18px;
+    display: inline-block;
+    text-align: center;
+    color: #082239;
+}
+
+.traderSection .traderBox h5 span {
+    display: block;
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+.tabBox.dataListCard .MuiCardHeader-root{
+    padding: 0;
+}
+
+.tabBox.dataListCard .MuiCardHeader-action{
+    margin: 0 8px;
+}
+
+
+.exchangeBox ul li.MuiListItem-gutters {
+    display: inline-block;
+    width: 188px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 10px;
+    padding: 16px 10px;
+}
+
+.exchangeBox ul li.MuiListItem-gutters img,
+.exchangeBox ul li.MuiListItem-gutters h2{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.exchangeBox ul li.MuiListItem-gutters p{
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+.dataListCard .MuiTab-textColorPrimary.Mui-selected,
+.settingSubMenu .MuiTab-textColorPrimary.Mui-selected {
+    color: #ff8400;
+}
+
+
+.dataListCard .MuiTabs-indicator,
+.settingSubMenu .MuiTabs-indicator {
+    background-color: #ff8400;
+}
+
+.pogressSection .circularProgress{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pogressSection .MuiCircularProgress-static {
+    width: 90px !important;
+    height: 90px !important;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.pogressSection .circularProgress .MuiTypography-h5{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translate(-50%, -50%);
+}
+
+.pogressSection .profileSection{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 20px;
+}
+
+.pogressSection .MuiCircularProgress-colorPrimary {
+    color: #ff8400;
+}
+
+#customized-menu ul li.MuiMenuItem-root{
+    font-size: 14px;
+    min-height: auto;
+    padding: 7px 20px;
+}
+
+.profileListItem ul li.MuiListItem-gutters{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.settingSubMenu .MuiTabs-flexContainer{
+    justify-content: center;
+}
+
+.settingSubMenu {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.bodyInformation h2.bodyTitle {
+    font-size: 22px;
+    padding: 15px 0;
+}
+
+.bodyInformation .profileImgaeBox {
+    text-align: center;
+    padding: 25px !important;
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+}
+
+.bodyInformation .profileImgaeBox .MuiAvatar-root{
+    margin: 5px auto;
+    width: 100px;
+    height: 100px;
+}
+
+.bodyInformation .profileImgaeBox h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.bodyInformation .profileImgaeBox h5{
+    color: #8e8e8e;
+    font-size: 14px;
+}
+
+.bodyInformation .profileImgaeBox .changePic{
+    margin-top: 25px;
+}
+.bodyInformation .profileImgaeBox .changePic input{
+    display: none;
+}
+
+.bodyInformation .profileListItem ul li {
+    border-bottom: 1px solid #ddd;
+}
+
+.bodyInformation .profileListItem ul li h5{
+    font-size: 14px;
+}
+
+.bodyInformation .profileListItem ul li h6{
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+.bodyInformation .profileListItem ul li h6.verified{
+    color: #07da40;
+}
+
+.mainbody .dataListCard .MuiCardContent-root.padBoxBody{
+    padding:15px;   
+    overflow: hidden;
+    max-height: inherit;
+}
+
+.mainbody .dataListCard .MuiCardContent-root.padBoxBody button {
+    margin-top: 25px;
+}
+
+.mainbody .dataListCard .MuiFormControl-root {
+    margin-bottom: 15px;
+}
+.mainbody .dataListCard .two_Group .form-control {
+    width: 48%;
+}
+.mainbody .dataListCard .three_Group .form-control {
+    width: 30%;
+}
+.mainbody .dataListCard .changePic .MuiButton-root {
+    background-color: #fff;
+    box-shadow: none;
+    color: #ff8400;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+
+.mainbody .dataListCard.sameHeight {
+    min-height: 456px;
+    position: relative;
+}
+
+.mainbody .dataListCard.sameHeight .MuiCardContent-root.padBoxBody button {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+}
+
+.bodyInformation .padBoxBody .form-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+p.authNote.MuiTypography-body1{
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: #8e8e8e;
+}
+
+.bodyInformation .identityBoxInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainbody .dataListCard .MuiCardContent-root.identityBoxInfo{
+    padding: 25px;
+}
+
+.mainbody .dataListCard .identityBoxInfo .title {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+.mainbody .dataListCard .identityBoxInfo .subTitle {
+    font-size: 16px;
+    margin: 10px 0 15px 0;
+    color: #8e8e8e;
+    text-align: center;
+}
+
+.idImage {
+    max-width: 100px;
+}
+
+.mainbody .dataListCard .identityBoxInfo .MuiButton-containedPrimary{
+    margin-top: 30px;
+    border-radius: 50px;
+    text-transform: capitalize;
+}
+
+.mainbody .dataListCard .authentication ul li.MuiListItem-root {
+    display: inline-block;
+    width: 45%;
+    border: 1px solid #ddd;
+    margin: 10px;
+}
+
+.mainbody .dataListCard .MuiListItemText-root.text-right{
+    margin: 0;
+}
+
+
+.bodyInformation .profileListItem ul li{
+    padding: 10px;
+}
+
+
+.mobileMenu{
+    display: none;
+}
+
+
+.stepsHeader {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+
+.stepsHeader .MuiStepper-root{
+    width: 40%;
+}
+
+.stepsHeader .MuiButton-contained{
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.stepsHeader .MuiTypography-root{
+    padding-left: 10px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.stepsHeader button svg{
+    vertical-align: bottom;
+    height: 24px;
+    line-height: 24px;
+}
+
+
+.mainbody .stepSectionBox .dataListCard .identityBoxInfo .title{
+    margin: 25px 0 10px 0;
+}
+
+
+.mainbody .stepSectionBox .dataListCard .identityBoxInfo .subTitle {
+    font-size: 14px;
+}
+
+.verification.logoutBtn {
+    top: 56px !important;
+    right: 38px !important;
+}
+
+.mainbody .stepSectionBox .dataListCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 500px;
+    justify-content: center;
+    /* margin: 25px 0; */
+}
+
+
+.mainbody .stepSectionBox .imgBox {
+    margin: 50px 0;
+}
+
+.mainbody .stepSectionBox .imgBox img {
+    border: 1px solid #c5c5c5;
+    padding: 15px;
+    border-radius: 5px;
+    width: 21%;
+}
+
+.mainbody .stepSectionBox .uploadBox {
+    display: flex;
+    justify-content: center;
+}
+
+.mainbody .stepSectionBox .sideBox {
+    /* display: inline-block; */
+    padding: 25px;
+    border: 1px dashed #ddd;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.mainbody .stepSectionBox .sideBoxSelected {
+    max-width: 21%;
+}
+
+
+.mainbody .stepSectionBox .sideBox .imgBox{
+    margin: 0;
+}
+
+.exchangeBox ul li.MuiListItem-gutters img {
+    width: 18%;
+    margin-right: 5px; 
+    border-radius: 50%;
+}
+.exchangeBox .exchangeData ul li .td img {
+    width: 12%;
+}
+.exchangeBox .exchangeData ul li .td:nth-child(1),
+.exchangeBox .exchangeData ul li .td:nth-child(2),
+.exchangeBox .exchangeData ul li .td:nth-child(5) {
+    width: 23%;
+}
+
+.exchangeBox .exchangeData ul li .td:nth-child(3){
+    width: 16%;
+}
+
+
+.exchangeBox .exchangeData ul li .td:nth-child(4){
+    width: 15%;
+}
+
+.wallet-drawer .MuiDrawer-paper {
+    position: relative;
+    max-width: 235px;
+}
+
+.wallet-drawer {
+    height: 100%;
+}
+
+
+.darktoolbar .userbox .MuiAvatar-root{
+    width: 25px;
+    height: 25px;
+}
+
+.currnecyBox button p.MuiTypography-body1{
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.currnecyChange .MuiMenu-paper {
+    left: 0 !important;
+    right: 0 !important;
+    max-width:100% !important;
+    box-shadow: none !important;
+    background-color: #0d1a35;
+    border-radius: 0;
+}
+
+.currnecyChange .MuiMenu-paper ul{
+    padding: 15px;
+    font-size: 12px;
+}
+
+
+.balanceMenu .currnecyList .item,
+.currnecyChange .currnecyList .item {
+    display: inline-block;
+    padding: 5px 15px;
+    width: 14%;
+}
+
+
+.balanceMenu .MuiMenu-paper .currnecyList .item .title {
+    color: #9397a1;
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+.balanceMenu .currnecyList .item li {
+    border-top: 1px solid #9397a1;
+    padding: 10px 15px;
+}
+.balanceMenu .currnecyList .item li a {
+    color: #9397a1;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.balanceMenu .currnecyList .item li a span{
+    color: #ff8400;
+    margin-right: 5px;
+}
+.currnecyChange .MuiMenu-paper .currnecyList .title {
+    color: #7183ab;
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+
+.currnecyChange .MuiMenu-paper .currnecyList .MuiTypography-colorPrimary{
+    color: #7183ab;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.currnecyChange .MuiMenu-paper .currnecyList .MuiTypography-colorPrimary span{
+    color: #ff8400;
+    margin-right: 5px;
+}
+
+.currnecyChange .MuiMenu-paper .currnecyList .currnecyListItem li{
+    border-top: 1px solid #7183ab;
+    padding: 10px 15px;
+}
+
+.identityBoxInfo .selectBox {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 35px 15px 25px 15px;
+    margin: 0 14px;
+}
+
+.identityBoxInfo .selectedBox {
+    box-shadow: 0 7px 35px 0 rgba(90, 97, 105, 0.1), 0 15px 22px 0 rgba(90, 97, 105, 0.1), 0 4px 8px 0 rgba(90, 97, 105, 0.12), 0 2px 3px 0 rgba(90, 97, 105, 0.11);
+
+    border-radius: 5px;
+    padding: 35px 15px 25px 15px;
+    margin: 0 14px;
+    position: relative;
+}
+
+.identityBoxInfo .selectBox .MuiIconButton-root{
+    display: none;
+}
+.identityBoxInfo .selectedBox .MuiIconButton-root{
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #18294d;
+    padding: 6px;
+}
+.identityBoxInfo .selectedBox .MuiIconButton-root:hover{
+    background-color: transparent !important;
+}
+.identityBoxInfo .selectBox p,
+.identityBoxInfo .selectedBox p{
+    font-weight: 600;
+}
+
+.identityBoxInfo .selectBox p {
+    color: #8e8e8e;
+    margin-top: 15px;
+}
+
+.identityBoxInfo .selectedBox p {
+    color: #17294E;
+    margin-top: 15px;
+}
+.identityBoxInfo .selectedBox img {
+    width: 50%;
+}
+
+.identityBoxInfo .selectBox img {
+    width: 50%;
+}
+
+.mainbody .stepSectionBox .uploadBox .sideBox .dropzon-input{
+    font-size: 14px;
+    color: #8e8e8e;
+    margin: 15px 0 0 0;
+}
+
+.paddingB0{
+    padding-bottom: 0 !important;
+}
+
+.walletGrid.MuiGrid-spacing-xs-2 {
+    display: table;
+    width: 100%;
+    margin: 0;
+}
+
+/* new update css */
+
+
+
+.walletpageBody {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 55vh;
+    background-color: #fff;
+}
+
+.sideBar{
+    display: table-cell;
+    width: 221px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+}
+
+.sideBar .coinList .list {
+    padding: 0;
+}
+
+.rightBar{
+    display: table-cell;
+    width: calc(100% - 222px);
+    background-color: #f4f6f8;
+}
+
+.rightBar.wallet .MuiContainer-root{
+    padding: 5px;
+}
+
+.coinList ul li.MuiListItem-root.MuiListItem-gutters {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px;
+    /* padding: 12px 20px; */
+}
+
+.coinList ul li.MuiListItem-root.MuiListItem-gutters.active{
+    background-color: #17294e;
+}
+
+.coinList ul li.MuiListItem-root.MuiListItem-gutters.active h2,
+.coinList ul li.MuiListItem-root.MuiListItem-gutters.active p{
+    color: #fff;
+}
+
+.coinList ul li img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.coinList ul li h2.MuiTypography-root.MuiTypography-h6{
+    display: inline-block;
+    vertical-align: middle;
+}
+.coinList ul li p.MuiTypography-root.MuiTypography-body1.MuiTypography-colorTextSecondary{
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.mainbody.wallet .dataListCard .MuiCardContent-root{
+    padding: 15px;
+}
+.wallet .tabBox .MuiTabs-flexContainer {
+    justify-content: center;
+}
+
+
+
+.exchangeBox .exchangeData {   
+    height: 349px;
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
+}
+
+.exchangeBox .exchangeData ul{
+    border: 1px solid #ddd;
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.exchangeBox .exchangeData ul li.MuiListItem-gutters {
+    display: table-row;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    padding: 0;
+}
+
+.exchangeBox .exchangeData ul li .td {
+    display: table-cell;
+    /* word-break: break-all; */
+    word-spacing: normal;
+    padding: 0px 5px;
+    word-break: break-word;
+    vertical-align: middle;
+}
+.exchangeBox .exchangeData ul li.MuiListItem-gutters:last-child{
+    border: none;
+}
+
+
+.exchangeBox .exchangeData ul li.MuiListItem-gutters h2{
+    font-size: 14px;
+}
+
+.exchangeBox .exchangeData ul li.MuiListItem-gutters h2 span{
+    color:#8e8e8e;
+}
+
+.exchangeBox .exchangeData .td.arrow .red .MuiSvgIcon-root {
+    transform: rotate(90deg);
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+
+.exchangeBox .exchangeData .td.arrow .green .MuiSvgIcon-root {
+    transform: rotate(-90deg);
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.exchangeBox .exchangeData .td.arrow p.red {
+    color: #d42525;
+}
+
+
+.exchangeBox .exchangeData .td.arrow p.green {
+    color: #0fbf35;
+}
+
+.exchangeBox .exchangeData ul li .MuiButton-contained{
+    margin: 0 5px;
+}
+
+.exchangeBox .exchangeData ul li span.MuiButton-label {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+
+
+
+.exchangeBox .exchangeData ul{
+    border: none;
+}
+
+
+ul.accountSecurity {
+    padding: 10px !important;
+}
+
+ul.accountSecurity li.MuiListItem-root.MuiListItem-gutters {
+    display: inline-block;
+    width: 47%;
+    border: 1px solid #ddd;
+    margin: 5px;
+    font-size: 14px;
+}
+
+ul.accountSecurity li a{
+    display: block;
+    color: #ff8400;
+    margin-top: 5px;
+}
+
+ul.accountSecurity li a:hover,
+ul.accountSecurity li a:focus{
+    color: #ff8400;
+}
+
+
+.noDatafound {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.noDatafound img{
+    width: 20%;
+}
+
+.noDatafoundFull {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.noDatafoundFull img {
+    width: 5%;
+}
+
+.noDatafoundFull h2{
+    font-size: 14px;
+    color: #8e8e8e;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.noDatafound h2{
+    font-size: 14px;
+    color: #8e8e8e;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.wallet .walletGrid{
+    padding: 25px 15px !important;
+}
+
+
+
+
+.walletGrid .walletBlance {
+    position: relative;
+}
+
+.walletGrid .walletBlance span {
+    color: #8e8e8e;
+    font-size: 16px;
+    margin:0 0 10px 0;
+    display: block;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.walletGrid .walletBlance h4 {
+    color: #444444;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.walletGrid .walletBlance h6 {
+    color: #8e8e8e;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.walletGrid .walletBlance img {
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.walletGrid .walletBlance .text {
+    display: inline-block;
+}
+
+.walletGrid .blanceGraph{
+    margin-top: 25px;
+}
+
+.none{
+    display: none;
+}
+
+
+.deposite .title {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.deposite .title h3{    
+    font-size: 28px;
+}
+.deposite .title a{
+    color: #ff8400;
+}
+.deposite .address {
+    padding: 15px;
+    text-align: center;
+}
+.deposite .address .barcode {
+    margin-top: 0px;
+}
+
+.deposite .address .details h5 {
+    font-size: 16px;
+    margin-bottom:5px;
+    color: #747474;
+}
+
+.deposite .address .details span {
+    font-size: 14px;
+    color: #747474;
+}
+
+.deposite.withDetails .MuiCardContent-root{
+    padding: 15px;
+}
+
+.mainbody.wallet .dataListCard.addressList .MuiCardContent-root{
+    padding: 0;
+}
+
+
+.wallet .dataListCard.addressList ul li{
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+}
+
+.wallet .dataListCard.addressList ul li.titleName h5,
+.wallet .dataListCard.addressList ul li.titleName span{
+    font-size: 16px;
+}
+
+.wallet .dataListCard.addressList ul li h5{
+    font-size: 14px;
+    width: 70%;
+    word-break: break-word;
+    padding-right: 10px;
+}
+
+
+.wallet .dataListCard.addressList ul li span{
+    font-size: 14px;
+    width: 30%;
+    word-break: break-word;
+}
+
+
+.Withdraw .dataListCard .MuiCardContent-root{
+    padding: 15px !important;
+    max-height: inherit;
+}
+
+.Withdraw .tableResponsive {
+    box-shadow: none;
+}
+
+.Withdraw .title {
+    margin-bottom: 15px;
+}
+
+.Withdraw .title h3 {
+    font-size: 28px;
+}
+
+.Withdraw .WithdrawBox span{
+    font-size: 14px;
+    color: #747474;
+}
+
+
+.Withdraw .WithdrawBox h4{
+    color: #ff8400;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.referralBox .MuiTypography-h6{
+    color: #ff8400;
+    font-size: 26px;
+}
+
+.WithdrawBox .btn{
+    text-align: right;
+}
+
+.Withdraw .MuiButton-containedPrimary span{
+    color: #fff;
+}
+
+.Withdraw .MuiButton-contained{
+    margin-top: 5px;
+}
+.mainbody .MuiButton-containedPrimary{
+    border-radius: 21px;
+    padding: 7px 24px;
+    font-weight: 400;
+}
+
+
+table.MuiTable-root {
+    border: 1px solid #ddd;
+}
+
+table>thead tr th{
+    background-color: #f4f6f8;
+}
+
+.mainbody .dataListCard.tableTitle .MuiCardHeader-root{
+    padding: 15px;
+}
+
+.mainbody .dataListCard.tableTitle .MuiCardContent-root{
+    padding: 15px !important;
+}
+
+
+.deposite .dataListCard .MuiCardHeader-root{
+    padding: 12px 15px;
+}
+
+.bankDetails span{
+    font-size: 14px;
+    color: #8e8e8e;
+}
+
+.bankDetails ul {
+    margin-top: 15px;
+}
+.bankDetails ul li h5{
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.bankDetails .note{
+    font-size: 12px;
+    font-weight: 400;
+    margin: 12px 0;
+}
+
+
+.wallet{
+    padding: 0 !important; 
+}
+
+
+
+.loginBg {
+    background: url(../img/login-bg.webp) repeat #fbfbff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.tabValue .Icon {
+    line-height: 4px;
+    margin-right: 5px;
+}
+
+.tabValue .Icon,
+.tabValue .title {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.leftLogBox {
+    padding: 50px 70px;
+}
+
+.leftLogBox .title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.leftLogBox .title h2 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #17294e;
+    margin-bottom: 5px;
+}
+
+.leftLogBox .title h6{
+    color: #8e8e8e;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.leftLogBox .MuiFormControl-root{
+    margin: 10px 0;
+}
+
+.leftLogBox .MuiButton-contained{
+    margin-top: 30px;
+}
+
+.leftLogBox .MuiCheckbox-colorPrimary.Mui-checked {
+    color: #17294e;
+}
+
+.leftLogBox .MuiInput-underline:hover:before {
+    border-color: #303f9f;
+}
+.leftLogBox .MuiInput-underline:hover:not(.Mui-disabled):before {
+    border-bottom: 2px solid #303f9f;
+}
+
+.leftLogBox .inlinebox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 0 0;
+}
+
+.leftLogBox .inlinebox h5{
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+}
+
+.leftLogBox .inlinebox a{
+    color: #ff8400;
+    font-size: 14px;
+}
+
+.leftLogBox .footLogBox {
+    margin: 45px 0  30px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.leftLogBox .footLogBox a {
+    margin-left: 10px;
+}
+.rightLogBox{
+    padding: 60px 50px;
+}
+.rightLogBox .carousel .slider,
+.rightLogBox .carousel .slide {
+    background: transparent;
+}
+.rightLogBox .carousel .slider-wrapper {
+    padding-bottom: 55px;
+}
+
+.rightLogBox .carousel .control-dots .dot{
+    width: 10px;
+    height: 10px;    
+    background: #17294e;    
+    opacity: .5;
+}
+
+.rightLogBox .carousel .control-dots .dot.selected, 
+.rightLogBox .carousel .control-dots .dot:hover {
+    outline: none;
+}
+
+.rightLogBox .carousel .carousel-status,
+.rightLogBox .carousel .thumbs-wrapper{
+    display: none;
+}
+
+.rightLogBox .carousel .control-dots {
+    padding:0;
+}
+
+.forCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightLogBox .carousel.carousel-slider .control-arrow {
+    display: none;
+}
+
+ul.accountSecurity li p{
+    font-size: 14px;
+}
+
+.mainbody .dataListCard .MuiListItem-alignItemsFlexStart {
+    padding: 7px 10px;
+}
+
+
+.stepSectionBox .dataListCard .MuiCardContent-root {
+    overflow: hidden !important;
+    max-height: none;
+}
+
+
+.wallet .dataListCard.addressList .MuiCardHeader-content ul li {
+    padding: 0;
+    border: none;
+}
+
+
+
+
+
+
+/* trade page css start */
+
+.tradeBody .MuiGrid-item {
+    padding: 3px;
+}
+
+.bgBlack {
+    background-color: #313337;
+}
+
+.tradeBar {
+    background-color: #18191b;
+}
+
+.tradeBar .tradelogo  .logoBox img{
+    width: 11%;
+    padding: 0px 2px;
+}
+
+.tradeBar .tradelinks  {
+    text-align: right;
+}
+
+.tradeBar .tradelinks nav {
+    padding: 4px 0;
+}
+
+.tradeBar .tradelinks li {
+    display: inline;
+}
+
+.tradeBar .tradelinks li a {
+    font-size: 14px;
+    color: #999a9c;
+}
+
+
+.tradeBody .headTitle {
+    background-color: #202124;
+    padding: 7px;
+    border-bottom: 1px solid #2d2f33;
+}
+.tradeBody .headTitle h6 {
+    font-size: 10px;
+    color: #9599a3;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+
+.tradeBody .tradeBox.orderBook {
+    margin-top: 5px;
+}
+
+.tradeBody .tradeBox .table{
+    background-color: #18191b;
+    border: none;
+}
+
+
+.tradeBody .tradeBox .table ul li {
+    display: table;
+    width: 100%;
+}
+
+.tradeBody .tradeBox .table ul li.MuiListItem-gutters {
+    padding: 0;
+}
+
+.tradeBody .tradeBox .table ul li>div {
+    display: table-cell;
+    font-size: 11px;    
+    padding: 5px;
+    text-align: center;
+    width: 33.333333333%;
+}
+
+.tradeBody .tradeBox.orderBook .table ul li>div {
+    width: 25%;
+}
+
+
+.tradeBody .tradeBox .table ul {
+    padding: 0;
+}
+
+.tradeBody .tradeBox .table ul li .bid,
+.tradeBody .tradeBox .table ul li .price {
+    color: #1D8341;
+}
+.tradeBody .tradeBox .table ul li .amount{
+    color: #fff;
+}
+.tradeBody .tradeBox .table ul li .time,
+.tradeBody .tradeBox .table ul li .amount2 {
+    color: #9599a3;
+}
+.tradeBody .tradeBox .table ul li .price { 
+    color: #1D8341;
+}
+
+.tradeBody .tradeBox .table ul li .ask,
+.tradeBody .tradeBox .table ul li.red .price { 
+    color: #E04349;
+}
+.tradeBody .tradeBox .table ul li.table-subheading > div,
+.orderbookData  .table ul li.table-subheading > div{
+    color: #9599a3;
+    border-bottom: 1px solid #2d2f33;
+}
+
+.tradeBody .tradeBox.openAllTable .table .table-subheading div {
+    color: #9599a3;
+}
+.tradeBody .tradeBox.openAllTable .table ul li>div {
+    color: #c4c5ca;
+    width: 20%;
+    padding: 5px 5px;
+}
+
+.tradeBody .tradeBox.openAllTable .table ul.scrollBody li .action a {
+    background-color: #E04349;
+    color: #fff;
+    border-radius: 40px;
+    padding: 3px 15px;
+    font-size: 11px;
+    font-weight: 100;
+    text-transform: capitalize;
+    display: block;
+    width: 40px;
+    margin: 0 auto;
+}
+
+
+.openAllBox .footTable, 
+.orderBox .footTable,
+.tradeBody .tradeBox .table .footTable {
+    text-align: right;
+    padding: 5px 7px;
+    background-color: #131415;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.openAllBox .footTable a,
+.orderBox .footTable a, 
+.tradeBody .tradeBox .table .footTable a {
+    font-size: 11px;
+    text-align: right;
+    color: #9599a3;
+    line-height: 14px;
+    vertical-align: middle;
+}
+
+.tradeBody .tradeBox .table .footTable a {
+    margin-left: 8px;
+}
+.tradeBody .tradeBox .table .footTable a:hover {
+    color: #b4b7bd;
+}
+
+
+.tradeBody .tradeBox .table  .footTable .status{
+    width: 8px;
+    height: 8px;
+    background-color: #ddd;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
+.tradeBody .tradeBox .table  .footTable .status.red {
+    background-color: #E04349;
+}
+
+.tradeBody .tradeBox .table  .footTable .status.green {
+    background-color: #1D8341;
+}
+
+
+.tradeBody .tradeBox:focus {
+    border-radius: 0;
+    border: none;
+    outline: none;
+}
+
+
+.tradeBody .graphBox {
+    margin-bottom: 0px;
+}
+
+.tradeBody .graphBox .graphData {
+    background-color: #18191b;
+    height: calc(100vh - 59.4vh);
+}
+
+.tradeBody .headTitle.nested{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tradeBody .headTitle.nested .MuiButton-contained {
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+.tradeBody .tabBox .MuiCard-root{
+    background-color: #18191b;
+    color: #9599a3;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.tradeBody .tabBox .MuiCardHeader-root {
+    padding: 0;
+}
+
+.tradeBody .tabBox .MuiTab-root {
+    min-width: 50%;
+}
+
+.tradeBody .tabBox .MuiTabs-flexContainer {
+    justify-content: center;
+    border-bottom: 1px solid #2d2f33;
+}
+
+.tradeBody .tabBox .MuiTab-textColorPrimary,
+.tradeBody .tabBox .MuiTab-textColorPrimary.Mui-selected {
+    color: #fff;
+    font-weight: 300;
+    text-transform: capitalize;
+    padding: 4px 10px;
+    min-height: auto;
+}
+
+.tradeBody .tabBox .MuiTabs-indicator {
+    background-color: #1D8341 !important;
+    display: none;
+}
+
+
+.tradeBody .tabBox .MuiTabs-root {
+    min-height: 38px;
+}
+
+
+.tradeBody .subData h2 {
+    font-size: 12px;
+    color: #9599a3;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+
+.tradeBody .subData .MuiInput-root{
+    border: 1px solid #9599a3;
+    height: 38px;    
+    font-size: 12px;
+    color: rgb(255, 255, 255);    
+    border-radius: 0.313rem;
+    padding: 0 15px;
+    margin: 5px 0;
+    outline: 0;
+    font-weight: 300;
+}
+
+.tradeBody .subData .MuiInput-underline:before,
+.tradeBody .subData .MuiInput-underline:after,
+.tradeBody .subData .MuiInput-underline:hover:not(.Mui-disabled):before {
+    border: none;
+}
+
+.tradeBody .subData .inline {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+.tradeBody .subData .inline.fee h5 {
+    font-size: 11px;
+    color: #9599a3;
+    font-weight: 300;
+}
+
+.tradeBody .subData .inline.total h5 {
+    font-size: 12px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.tradeBody .subData .MuiButton-containedPrimary {       
+        width: 100%;
+        font-size: 12px;
+        color: #fff;
+        border-radius: 6px;
+        background: #1c843f;
+        border:1px solid #1c843f;        
+        padding: 5px 20px;
+        margin: 10px 0 0 0;
+        outline: none;
+        text-decoration: none;
+}
+
+
+.tradeBody .subData .space15 {
+    display: block;
+    height: 16px;
+}
+
+
+
+.tradeBody .openAllBox.tabBox {
+    margin-top: 5px;
+}
+
+.tradeBody ul.openallList{
+    padding: 0;
+    display: block;
+    height: calc(100vh - 395px);
+    overflow: auto;
+}
+
+.tradeBody .openallList li {
+    display: block;
+    padding: 8px 30px;
+    border-left: 2px solid #1c843f;
+    border-bottom: 1px solid #2d2f33;
+}
+.tradeBody .openallList li:last-child {
+    border: none;
+}
+
+.tradeBody .openallList li.redBorder {
+    border-left: 2px solid #b8393f;
+}
+
+.tradeBody .openallList li h3,
+.tradeBody .openallList li h5{
+    font-size: 12px;
+    color: #9397a1;
+    margin: 5px 0;
+}
+
+.tradeBody .openallList li h3 span{
+    color: white;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.tradeBody .openallList li h4{
+    font-size: 12px;
+    color: #1c843f;
+    margin: 5px 0;
+}
+
+
+.tradeBody .openallList li.redBorder h4 {
+    color: #b8393f;
+}
+
+
+.tradeBody .openallList li .MuiButton-containedSecondary{
+    background-color: #E04349;
+    color: #fff;
+    border-radius: 40px;
+    padding: 0;
+    font-size: 11px;
+    font-weight: 100;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+
+.tradeBody .openAllBox .MuiCardContent-root {
+    padding: 0 !important;
+}
+
+.tradeBody .openAllBox.tabBox .MuiTab-textColorPrimary{
+    border-bottom: 2px solid #18191b;
+}
+
+.tradeBody .openAllBox.tabBox .MuiTab-textColorPrimary.Mui-selected{
+    border-bottom: 2px solid #1c843f;
+}
+
+.tradeBody .orderbookData .table {
+    background-color: #18191b;
+    border: 1px solid #18191b;
+}
+
+.tradeBody .orderbookData .table ul{
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.tradeBody .orderbookData .table ul li {
+    display: table-row;
+    width: 100%;
+}
+
+.livedata .table ul li:hover {
+    background-color: rgb(50 51 55 / 55%);
+}
+
+.livedata .table ul li.active {
+    background-color: rgb(50 51 55 / 55%);
+}
+
+.tradeBody .orderbookData li div:first-child {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.tradeBody .orderbookData li div {
+    white-space: nowrap;
+    display: table-cell;
+    font-size: 15px;
+    width: 16.6666666%;
+    text-align: middle;
+    padding: 9px 7px;
+    color: #c4c5ca;
+    vertical-align: middle;
+}
+
+.currentMarket img {
+    vertical-align: middle;
+}
+
+.currentMarket span {
+    padding-left: 10px;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.tradeBody .orderbookData li .symbol img {
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+    width: 17%;
+}
+
+.tradeBody .orderbookData li .amount,
+.tradeBody .orderbookData li .amount2{
+    color: #fff;
+}
+
+.tradeBody .orderbookData li .bid,
+.tradeBody .orderbookData li .change.green {
+    color: #1c843f;
+}
+
+.tradeBody .orderbookData li .ask,
+.tradeBody .orderbookData li .change.red {
+    color: #E04349;
+}
+
+
+.balance_head {
+    display: flex;
+    align-items: baseline;
+}
+
+.balance_head a {
+    font-size: 12px;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.balance_head h5 {
+    margin: 1px 12px;
+    font-size: 12px;
+    color: #9397a1;
+}
+
+.balance_head h5 span { 
+    color: #fff;
+}
+
+.balance_head a .MuiSvgIcon-root {
+    height: 14px;
+    font-size: 17px;
+    vertical-align: text-bottom;
+}
+
+
+.balanceMenu .MuiPopover-paper {
+    max-width: 100% !important;
+    box-shadow: none !important;
+    left: 0px !important;
+    right: 0px !important;
+    top: 68px !important;
+    background-color: #313337;
+    border-radius: 0;
+    color: #fff;
+}
+
+.balanceMenu .MuiPopover-paper ul li {
+    display: table;
+    width: 100%;
+}
+
+.balanceMenu .MuiPopover-paper .ListItem {
+    display: table-row;
+}
+
+.balanceMenu .MuiPopover-paper .ListItem .col {
+    display: table-cell;
+}
+
+.balanceMenu .MuiPopover-paper .ListItem .col h6 {
+    font-size: 14px;
+}
+
+.balanceMenu .MuiPopover-paper .ListItem .col span {
+    color: #9397a1;
+}
+
+
+.tradeBody .tradingLogin {
+    background-color: #18191b;
+    padding: 15px;
+    height: 100vh;
+}
+
+.tradeBody .tradingLogin .MuiButton-contained {
+    width: 100%;
+    border-radius: 40px;
+    margin: 6px 0;
+    box-shadow: none;
+}
+
+.tradeBody .tradingLogin h2 {
+    color: #fff;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.tradeBody .tradingLogin h5{
+    color: #9599a3;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.tradeBody .tradingLogin .aboutList {
+    list-style: disc;
+    padding: 25px;
+}
+
+.tradeBody .tradingLogin .aboutList li {
+    list-style: disc;
+    list-style-type: disc;
+    color: #9599a3;
+    font-size: 12px;
+    padding: 0;
+    margin-bottom: 7px;
+    display: list-item;
+}
+
+
+.walletGrid .blanceGraph, .walletGrid .walletBlance {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    margin: 0;
+}
+
+.balanceGrid {
+    padding: 0 10px;
+}
+
+.buySellBox .headTitle {
+    text-align: right;
+    padding: 0;
+    position: relative;
+}
+
+.buySellBox .headTitle h6 {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+}
+
+.mainbody .buySellBox .headTitle button {
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 11px;
+    border-radius: 0;
+    transition: none;
+    border-bottom: 2px solid #202124;
+    height: 31px;
+}
+
+.tradeBody .tabBox.buySellBox .MuiTabs-indicator {
+    display: none;
+}
+
+.mainbody .buySellBox .headTitle button.MuiButton-containedPrimary.active span {
+    color: #1c843f;
+}
+
+.mainbody .buySellBox .headTitle button.MuiButton-containedSecondary.active span{
+    color: #E04349;
+}
+
+.mainbody .buySellBox .headTitle button.MuiButton-containedPrimary.active {
+    border-bottom: 2px solid #1c843f;
+}
+
+.mainbody .buySellBox .headTitle button.MuiButton-containedSecondary.active {
+    border-bottom: 2px solid #E04349;
+}
+.mainbody .buySellBox button.buyMarket,
+.mainbody .buySellBox button.sellMarket {
+    border-bottom: 2px solid #202124;
+}
+.mainbody .buySellBox button.buyMarket.Mui-selected {
+    border-bottom: 2px solid #1c843f;
+}
+.mainbody .buySellBox button.sellMarket.Mui-selected {
+    border-bottom: 2px solid #e04349;
+}
+
+.tradeBody .subData .btn.sellMarket.MuiButton-containedPrimary{
+    background: #e04349;
+    border: 1px solid #e04349;
+}
+
+.tradeBody .buySellBox .MuiCardContent-root {
+    padding: 5px;
+}
+
+
+
+/* 
+.tradeBody .orderbookData .table ul.scrollBody {
+    overflow: auto;
+    height: calc(100vh - 506px);
+    display: flex;
+    flex-direction: column;
+}
+
+.tradeBody .orderbookData .table ul.scrollBody li {
+    display: flex;
+} */
+
+.tradeBody .askBidData {
+    display: flex;
+}
+
+.tradeBody .askBidData .table {
+    width: 100%;
+}
+
+.tradeBody .tradeBox .table ul.scrollBody {
+    display: block;
+    height: calc(100vh - 66vh);
+    overflow: auto;
+}
+
+
+.tradeBody.tradeModal {
+    width: 50%;
+    margin: 12% auto;
+    padding: 0;
+    height: 370px;
+    box-shadow: 0px 0px 3px 1px #ececec;
+}
+
+.tradeBody.tradeModal .tradeBox .table ul.scrollBody,
+.tradeBody.tradeModal .orderbookData {
+    /*height: calc(100vh - 102px);*/
+}
+
+
+.tradeBody.tradeModal .tableHead div {
+    width: 33.3333333333333%;
+    text-align: center;
+}
+
+.tradeBody.tradeModal .headTitle .MuiSvgIcon-root {
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    color: #9599a3;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.tradeBody.tradeModal .tradeBox {
+    border: 1px solid #2d2f33;
+}
+ 
+
+.tradeBody {
+    padding-top: 10px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.tradeBody .tradeMenuLink {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tradeBody .userbox  a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 15px;
+    color: #ddd;
+    font-size: 12px;
+}
+
+
+.tradeBody .userbox .MuiAvatar-root{
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 19px;
+    font-size: 11px;
+    margin-right: 7px;
+}
+
+.tradeBody .userbox span.MuiTypography-root {
+    vertical-align: middle;
+}
+
+.tradeBody .userbox .MuiSvgIcon-root{
+    width: 20px;
+    height: 15px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.mainbody.tradeBody.MuiContainer-maxWidthLg {
+    padding: 2px 2px;
+}
+
+.tradeBody .balanceGrid, .tradeBody .tradeMenuLink {
+    padding: 2px 5px;
+}
+
+
+.tradeBody .orderBox {
+    background-color: #18191b;
+    margin-bottom: 5px;
+}
+
+.tradeBody .orderbookData {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 59.2vh);
+    overflow: auto;
+}
+
+.tradeBody .orderbookData .table {
+    display: table;
+    width: 100%;
+    border: none;
+    height: 100%;
+}
+
+.tradeBody .tableFixHead {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #2d2f33;
+}
+
+.tradeBody .tableHead {
+    display: table-cell;
+    width: 50%;
+}
+
+.tradeBody .tableHead ul {
+    padding: 0;
+    display: table;
+    width: 100%;
+}
+
+.tradeBody .tableHead ul li{
+    display: table-row;
+    width: 100%;
+}
+
+.tradeBody .tableHead div {
+    color: #9397a1 !important;
+    padding: 5px;
+    font-size: 11px;
+    display: table-cell;
+    width: 16.6666666%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.tradeBar .mobileMenu a {
+    cursor: pointer;
+}
+
+
+.orderbookData .table ul li.table-subheading > div {
+    padding: 5px 16px;
+    font-size: 12px;
+}
+
+.tradeBody.tradeModal .orderbookData .table ul {
+    height: auto;
+}
+
+/* .tradeBody .tableHead div.symbol,
+.tradeBody .orderbookData li div.symbol {
+    text-align: left;
+} */
+/* trade page css over */
+
+
+
+
+/* refer page css start */
+
+
+.inviteSection {
+    padding: 110px 0;
+}
+
+
+.inviteSection .title {
+    text-align: center;
+}
+
+.inviteSection .title h5 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 25px; 
+}
+
+.detailedRulesSection .detailedRulesText {
+    padding: 50px 0;
+}
+
+.detailedRulesSection .detailedRulesText h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px; 
+}
+
+.detailedRulesSection .detailedRulesText h5 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px 0 10px 0; 
+}
+
+.detailedRulesSection .detailedRulesText h6 {
+    font-size: 14px;
+    color: #8e8e8e;
+    margin: 0;
+    font-weight: 400;
+}
+
+.inviteBoxSection .wrapBox {
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 20px;
+    border: 1px solid rgba(103,114,134,0.1);
+    border-radius: 5px;
+    padding: 30px;
+    margin: 0 5px;
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    min-height: 230px;
+}
+
+.inviteBoxSection .wrapBox .imgBox {
+    margin-bottom: 5px;
+}
+
+.inviteBoxSection .wrapBox h5 {
+    font-size: 35px;
+    display: inline-block;
+    color: #ddd;
+    margin-right: 5px;
+}
+
+.inviteBoxSection .wrapBox h3 {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+    text-transform: capitalize;
+    color: #283a5e;
+}
+
+.inviteBoxSection .wrapBox .subText{
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #677286;
+}
+
+
+.inviteBoxSection .wrapBox a{
+    display: inline-block;
+    padding: 9px 25px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 14px;
+    color: #1a2c50;
+}
+
+.inviteBoxSection .wrapBox a:hover,
+.inviteBoxSection .wrapBox a:focus{
+    background-color: #F79218;
+    border: 1px solid #F79218;
+    color: #fff;
+    text-decoration: none;
+    transition:  0.3s ease-in;
+    transition:  0.3s ease-out;
+    cursor: pointer;
+}
+
+.createReferlLinkBox {
+    box-shadow: 0px 0px 12px 0px rgb(212, 212, 212);
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    margin-top: -60px !important;
+    border-radius: 5px;
+    padding: 30px 25px; 
+}
+
+
+.createReferlLinkBox .mainTitle h4 {
+    font-weight: 400;
+    font-size: 30px;
+    color: #343434;
+    margin-bottom: 5px;
+}
+
+.createReferlLinkBox .mainTitle span {
+    font-size: 14px;
+    color: #777;
+}
+.receiveList {
+    text-align: center;
+}
+.receiveSection ul {
+    display: block;
+    width: 100%;
+}
+
+.receiveSection ul li {
+    background-color: #f8f7f7;
+    display: inline-block;
+    width: 46%;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.receiveSection ul li h5 {
+    font-size: 16px;
+    color: #8e8e8e;
+}
+
+.receiveSection ul li h4 {
+    font-size: 18px;
+    margin: 5px 0 5px 0;
+}
+
+
+.createReferlLinkBox .MuiFormControl-fullWidth {
+    margin:25px 0;
+}
+
+.createReferlLinkBox h6.remain {
+    font-size: 12px;
+    font-weight: 400;
+    color: #8e8e8e;
+    margin: 15px 0;
+    text-align: center;
+}
+
+
+a.inviteNow {
+    background-color: #f79218;
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px 40px;
+    border-radius: 25px;
+    color: #fff;
+}
+
+.slider  .inviteBox {
+    padding: 70px 0;
+}
+
+
+/* refer page css over */
+
+
+.MuiPaper-root.feesCard {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+.tradingTab h4.title{
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    margin: 0px 0 25px 0;
+}
+
+.tradingTab h6.text {
+    font-size: 14px;
+    padding-left: 10px;
+    color: #777;
+}
+
+.tradingTab hr{
+    margin: 50px 0;
+    border: 1px solid #ddd; 
+}
+
+.tradingboxRow .col h6 {
+    font-size: 14px;
+    color: #48515d;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.tradingboxRow .content {
+    margin-bottom: 15px;
+}
+.tradingboxRow .content h5 {
+    font-size: 16px;
+    display: inline-block;
+}
+
+.tradingboxRow .content h5.FL-right {
+    float: right;
+}
+
+.tradingboxRow  .col.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tradingboxRow  .col.flex h3 {
+    text-align: center;
+    font-size: 22px;
+}
+
+
+ul.maker-taker-table,
+ul.Deposit-Withdrawal-table  {
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 25px;
+    border: 1px solid #e6e6e6;
+    padding: 0;
+}
+
+ul.maker-taker-table li,
+ul.Deposit-Withdrawal-table li {
+    display: table-row !important;
+    padding: 0;
+}
+
+ul.maker-taker-table li .td,
+ul.Deposit-Withdrawal-table li .td {
+    display: table-cell;
+    width: 13%;
+    padding: 8px 5px;
+    font-size: 14px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+ul.maker-taker-table li:last-child .td
+ul.Deposit-Withdrawal-table li:last-child .td {
+    border-bottom:none;
+}
+
+ul.maker-taker-table li.head,
+ul.Deposit-Withdrawal-table li.head {
+    background-color: #F2F3F5;
+}
+
+ul.maker-taker-table li.head .td,
+ul.Deposit-Withdrawal-table li.head .td  {
+    padding: 10px 5px;
+}
+
+
+.tradingTab h4.title a {
+    color: #ff8400;
+    margin-left: 10px;
+    font-size: 14px;
+    vertical-align: middle;
+    line-height: 37px;
+}
+
+.makerLink h6 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.makerLink h6 a {
+    margin-left: 15px ;
+    color: #ff8400;
+}
+
+
+
+.Deposit-Withdrawal-table .td img {
+    width: 10%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 1px;
+    margin-right: 5px;
+}
+/* Material ttable */
+.MuiTableCell-head {
+    padding-bottom: 0;
+    padding-top: 0;
+    background-color: #fff;
+}
+
+
+.Deposit-Withdrawal-table .td.badge{
+    background-color: #ffd09e;
+    color: #ff8400;
+    padding: 3px 9px;
+    border-radius: 17px;
+    font-size: 12px;
+}
+.tableResponsive .MuiTablePagination-toolbar {
+    min-height: 40px;
+    display: flex;
+}
+
+
+h4.feeTitle {
+    font-size: 32px;
+    margin: 25px 0 25px 0;
+    font-weight: 600;
+}
+.tableResponsive .MuiTableCell-body {
+    padding-bottom: 13px;
+    padding-top: 13px;
+}
+
+
+.tableResponsiveMaker {
+    width: 100%;
+}
+.tableResponsive .makeStyles-root-141  {
+    height: 0;
+}
+
+
+
+.blogsSec {
+    padding: 25px 0;
+}
+.tableResponsive .MuiTableCell-head {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+.blogsSec .blogBox {
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 20px;
+    border: 1px solid rgba(103,114,134,0.1);
+    border-radius: 5px;
+    background-color: #fff;
+}
+.tableResponsive .makeStyles-root-665 {
+    height: 0;
+}
+
+.blogsSec .blogBox img {
+    width: 100%;
+}
+.blogsSec .blogBox h3 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    margin: 0 0 14px 0;
+    text-transform: capitalize;
+    color: #283a5e;
+}
+.tableResponsive .makeStyles-root-2 {
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 40px;
+}
+
+.blogsSec .blogBox .subText {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    color: #677286;
+}
+.paddingTopfoot {
+    height: 100vh;
+}
+
+
+
+.blogsSec .textbox {
+    padding: 15px;
+}
+
+.tableResponsive .MuiTablePagination-caption, .tableResponsive .MuiTablePagination-input {
+    display: none;
+}
+
+
+.blogsSec .textbox .footBlog a {
+    border: 1px solid #122c5f;
+    color: #122c5f;
+    border-radius: 25px;
+    padding: 7px 19px;
+    font-size: 12px;
+}
+.tableResponsive .MuiTableCell-root, .MuiTablePagination-root:last-child {
+    border-bottom: none!important;
+}
+
+.blogsSec .textbox .footBlog a:hover,
+.blogsSec .textbox .footBlog a:focus,
+.blogsSec .textbox .footBlog a:active{
+    background-color: #122c5f;
+    color: #fff;
+}
+.Deposit-Withdrawal-table .td img {
+    width: 10%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 1px;
+    margin-right: 5px;
+}
+
+
+.blogsSec .textbox .footBlog span{
+    float: right;
+    font-size: 12px;
+    /* padding: 7px 0 0 0; */
+    line-height: 25px;
+    color: #677286;
+}
+
+
+
+
+.bg-blogPic {
+    background: url(../img/blog-bg.webp);
+    background-position: center  center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.blogsSec .textbox .titleDate {
+    margin-bottom: 15px;
+}
+.blogsSec .textbox .titleDate h3 {
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+    margin: 0;
+}
+
+.blogsSec .textbox .titleDate span{
+    display: inline-block;
+    /* float: right; */
+    width: 20%;
+    vertical-align: top;
+    text-align: right;
+    font-size: 14px;
+    color: #677286;
+}
+
+.tradeBody.tradeModal .orderbookData {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 370px);
+    overflow: auto;
+}
+
+
+.tradeBody.tradeModal .orderbookData .table ul {
+    height: auto;
+}
+
+
+
+/*  */
+
+.transactionTable .MuiCardContent-root {
+    padding: 0 !important;
+}
+
+.transactionTable .title {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.transactionTable .title h3 {
+    font-size: 18px;
+    display: inline-block;
+}
+.Deposit-Withdrawal-table .td.badge{
+    background-color: #ffd09e;
+    color: #ff8400;
+    padding: 3px 9px;
+    border-radius: 17px;
+    font-size: 12px;
+}
+
+.transactionTable .title a {    
+    float: right;
+    color: #122c5f;
+    padding: 4px 10px;
+    border: 1px solid #122c5f;
+    font-size: 12px;
+    border-radius: 4px;
+    margin: -2px 0 0 0;
+}
+
+.transactionTable table.MuiTable-root {
+    border: none;
+}
+h4.feeTitle {
+    font-size: 32px;
+    margin: 25px 0 25px 0;
+    font-weight: 600;
+}
+
+.transactionTable table>thead tr th {
+    background-color: transparent;
+}
+
+.transactionTable .MuiTableCell-root {
+    font-size: 12px;
+}
+.tableResponsiveMaker {
+    width: 100%;
+}
+
+.tradelogoutBtn .MuiPaper-root,
+.agentBtn .MuiPaper-root {
+    border-radius: 0px ;
+    padding: 5px 5px;
+    top: 66px !important;
+    /*box-shadow: 0px 0px 3px 1px #ececec;*/
+    background-color: #313337;
+}
+
+.tradelogoutBtn .MuiPaper-root ul, 
+.agentBtn .MuiPaper-root ul {
+    padding: 0;
+}
+.tradelogoutBtn .MuiPaper-root ul li, 
+.agentBtn .MuiPaper-root ul li {
+    min-height: auto;
+    font-size: 14px;
+    color: #fff;
+}
+.MuiBackdrop-root {
+    background-color: rgba(0, 0, 0, 0.82) !important;
+}
+
+
+
+@media (max-width:767px) {
+
+    .homeLighttoolbar  {
+        padding: 0 10px !important;
+    }
+
+    .paddingTopbody {
+        padding-top: 155px;
+    }
+
+    .currnecyChange .MuiMenu-paper ul {
+        width: auto;
+    }
+
+    .currnecyChange .MuiMenu-paper {
+        top: 64px !important;
+    }
+
+    .currnecyChange .currnecyList .item  {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .mainNavBar {
+        background-color: #0d1a35;
+        /* display: none; */
+        position: absolute !important;
+        right: 0;
+        top: 48px;
+        left: 0;
+        text-align: center;
+    }
+
+    .leftbtnCurrency .MuiButton-containedPrimary {
+        display: block;
+    }
+
+    .homeLighttoolbar nav li.listItem {
+        padding: 10px;
+        display: block;
+        text-align: center;
+    }
+
+    .homeLighttoolbar nav li a {
+        font-weight: 300;
+    }
+
+    .mobileMenu{
+        display: block;
+    }
+    .darktoolbar {
+        padding: 10px !important;
+    }
+
+    .darktoolbar .MuiButton-containedPrimary{
+        padding: 0;
+    }
+    .darktoolbar .userbox{
+        width: 50%;
+        text-align: right;
+    }
+
+    .darktoolbar .userbox svg,
+    .lighttoolbar nav{
+        display: none;
+    }
+    
+
+    .lighttoolbar {
+        padding: 10px 5px 10px 10px !important;  
+    }
+    .lighttoolbar .logoBox{
+        padding-left:0; 
+    }
+
+    .mainbody.MuiContainer-maxWidthLg{
+        padding: 15px;
+    }
+
+    .mainbody .MuiGrid-spacing-xs-2 > .MuiGrid-item {
+        padding: 15px 5px;
+    }
+
+    .mainbody .pogressSection {
+        display: table;
+        width: 100%;
+    }
+
+    .pogressSection .circularProgress,
+    .pogressSection .profileSection{
+        display: table-cell;
+    }
+
+    .pogressSection .profileSection{
+        padding: 0;
+        padding-left: 10px;
+    }
+
+    .pogressSection .MuiCircularProgress-static{
+        width: 55px !important;
+        height: 55px !important;
+    }
+    .pogressSection .circularProgress .MuiTypography-h5{
+        font-size: 14px;
+        left: 36%;
+        top: 48%;
+    }
+    .profileSection h5{
+        font-size: 16px;
+    }
+    .profileSection h6{
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .balanceSection h6 {
+        font-size: 14px;
+    }
+    .balanceSection .MuiButton-root{
+        padding: 5px 15px;
+    }
+
+    .exchangeBox ul li.MuiListItem-gutters{
+        width: 95%;
+        margin: 5px;
+    }
+
+    .mainbody .dataListCard .MuiListItemText-root{
+        width: 70%;
+    }
+    .mainbody .dataListCard ul li .date {
+        width: 30%;
+    }
+
+    .mobileMenu .MuiButton-containedPrimary{
+        padding: 10px;
+        text-align: right;
+        width: auto;
+        min-width: auto;
+    }
+
+    .settingSubMenu .MuiTabs-flexContainer{
+        justify-content: unset;
+    }
+    .settingSubMenu .MuiTab-root{
+        font-size: 12px;
+    }
+
+    .padding0.MuiContainer-root{
+        padding: 0;
+    }
+
+    .bodyInformation h2.bodyTitle {
+        font-size: 18px;
+        padding: 5px 0;
+    }
+
+    .bodyInformation .profileImgaeBox .MuiAvatar-root{
+        width: 80px;
+        height: 80px;
+    }
+
+    .mainbody .dataListCard .MuiTypography-displayBlock{
+        font-size: 16px;
+    }
+
+    
+    .bodyInformation .padBoxBody .form-group{
+        display: block; 
+    }
+
+    .mainbody .dataListCard .three_Group .form-control,
+    .mainbody .dataListCard .two_Group .form-control{
+        width: 100%;
+    }
+
+    .mainbody .dataListCard .MuiCardContent-root.padBoxBody,
+    .mainbody .dataListCard .MuiCardContent-root.identityBoxInfo {
+        padding: 8px;
+    }
+
+    
+
+    .mainbody .dataListCard .authentication ul li.MuiListItem-root{
+        display: flex;
+        width: auto;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .mainbody .dataListCard .authentication a,
+    .mainbody .dataListCard .identityBoxInfo .subTitle{
+        font-size: 14px;
+    }
+
+    .mainbody .dataListCard .identityBoxInfo .title{
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .exchangeBox .exchangeData{
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+
+    .exchangeBox .exchangeData ul{
+        width: 100%;
+        display: table;
+        border: none;
+    }
+
+    .exchangeBox .exchangeData ul li .td{
+        padding: 15px 5px;
+    }
+
+    .exchangeBox .exchangeData ul li .td:nth-child(4), 
+    .exchangeBox .exchangeData ul li .td:nth-child(5) {
+        display: none;
+    }
+
+    .exchangeBox ul li.MuiListItem-gutters p{
+        line-height: 24px;
+    }
+
+    .exchangeBox .exchangeData ul li .td img {
+        width: 18%;
+    }
+
+
+    ul.accountSecurity li.MuiListItem-root.MuiListItem-gutters {
+        display: block;
+        width: 100%;
+        margin: 0px 0 10px 0;
+    }
+
+    .leftLogBox, 
+    .rightLogBox {
+        padding: 25px 3px;
+    }
+
+    #root {
+        height: auto;
+        min-height: auto;
+    }
+
+    .col-01,
+    .orderBox{
+        display: none;
+    }
+
+    .tradeBody {
+        overflow: auto;
+    }
+
+    .tradeBody .tradingLogin {
+        padding: 7px;
+    }
+
+    .tradeBar .tradelogo .logoBox img {
+        width: 42%;
+        padding: 5px;
+    }
+
+    .tradeBar .tradelinks {
+        text-align: center;
+        justify-content: center;
+        display: none;
+        position: absolute;
+        left: 5px;
+        right: 5px;
+        background-color: #18191b;
+        top: 59px;
+        z-index: 100;
+    }
+    .tradeBar .tradelinks li {
+        display: block;
+    }
+
+    .tradeBar  .mobileMenu {
+        display: inline-block;
+        text-align: right;
+        vertical-align: middle;
+        float: right;
+        margin: 10px 15px;
+    }
+
+    .tradeBar .mobileMenu a {
+        color: #fff;
+    }
+
+    .balance_head,
+    .balance_head a {
+        display: block;
+    }
+
+    .balance_head h5 {
+        display: inline-block;
+        margin: 0 5px 0 0;
+    }
+
+    .userbox {
+        padding: 7px 0;
+    }
+
+   
+
+    .balanceMenu .MuiPopover-paper {
+        top: 113px !important;
+    }
+
+    .balanceMenu ul {
+        padding: 15px;
+    }
+
+    .balanceMenu .currnecyList .item {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    .logoutBtn.tradeBTN .MuiPaper-root,
+    .tradelogoutBtn .MuiPaper-root, .agentBtn .MuiPaper-root {
+        top: 120px !important;
+    }
+    
+    .tradeBody .graphBox .graphData {
+        overflow-y: auto;
+    }
+
+    .deposite .address .details span {
+        word-break: break-all;
+    }
+
+    .walletGrid .blanceGraph, .walletGrid .walletBlance {
+        display: block;
+        width: 100%;
+        /* text-align: center; */
+    }
+
+
+    
+    .deposite .title,
+    .deposite .address{
+        display: block;
+        justify-content: unset;
+    }
+
+    .signupFormField1, 
+    .signupFormField2 {
+        padding: 0 !important;
+    }
+
+    .rightLogBox {
+        display: none;
+    }
+
+    .createReferlLinkBox {
+        padding: 16px;
+    }
+
+    .createReferlLinkBox .mainTitle h4 {
+        font-size: 22px;
+    }
+
+    .receiveSection ul li {
+        margin: 0 5px;
+    }
+
+    .inviteSection {
+        padding: 50px 0;
+    }
+
+    .inviteSection .title h5 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .inviteBoxSection .wrapBox  {
+        padding: 20px;
+    }
+
+    .MuiPaper-root.feesCard .MuiCardHeader-root {
+        padding: 0;
+    }
+
+    .MuiPaper-root.feesCard .MuiCardContent-root {
+        padding: 16px 0;
+    }
+
+    h4.feeTitle{
+        font-size: 26px;
+        margin: 0 0 20px 0;
+        font-weight: 600;
+    }
+
+    .makerLink h6 a {
+        display: block;
+        margin: 5px 0 5px 0;
+    }
+
+
+    ul.maker-taker-table li.head .td, ul.Deposit-Withdrawal-table li.head .td {
+        padding: 10px 15px;
+    }
+
+    ul.maker-taker-table li .td, ul.Deposit-Withdrawal-table li .td {
+        padding: 8px 15px;
+    }
+
+
+    .tableResponsiveMaker {
+        white-space: nowrap;
+        overflow: auto;
+        width: 100%;
+    }
+
+    .Deposit-Withdrawal-table .td img {
+        width: 40%;
+    }
+
+    .walletBlance .MuiTypography-h4 {
+        font-size: 1.3rem;
+    }
+
+    .paddingTopfoot {
+        height: 140vh;
+    }
+
+    .tableResponsive .makeStyles-caption-664 {
+        display: none;
+    }
+
+    .tableResponsive .MuiTablePagination-input {
+        display: none;
+    }
+
+    .noDatafound img {
+        width: 10%;
+    }
+
+    .paddingTopfootOp {
+        height: 145vh;
+    }
+
+    .stepperBar {
+        display: none!important;
+    }
+
+}
+
+
+
+@media (min-width:768px) and  (max-width:991px){
+
+    .mainbody.MuiContainer-maxWidthLg{
+        padding: 15px;
+    }
+
+    .exchangeBox .exchangeData{
+        border-bottom: 1px solid #ddd;
+    }
+
+    .leftLogBox, 
+    .rightLogBox {
+        padding: 20px 30px;
+    }
+
+    .col-01,
+    .orderBox{
+        display: none;
+    }
+
+    .rightLogBox {
+        padding: 25px 0;
+    }
+
+    .orderbookData .table {
+        width: 100%;
+        /* overflow: auto; */
+        white-space: nowrap;
+    }
+    .orderbookData li div{
+        padding: 5px;
+    }
+
+    .tradeBody .tradingLogin .aboutList {
+        padding: 14px;
+    }
+
+
+    .tradeBody {
+        height: auto;
+        overflow: auto;
+    }
+
+    .mainbody.tradeBody.MuiContainer-maxWidthLg {
+        padding: 0;
+    }
+
+    .tradeBody .tradingLogin {
+        height: auto;
+        padding: 7px 15px;
+    }
+
+    .tradeBody .tradingLogin .MuiButton-contained {
+        width: 45%;
+        margin: 10px 18px;
+    }
+
+    .tradeBar .tradelogo .logoBox img {
+        width: 25%;
+    }
+
+    .tradeBar .tradelinks nav {
+        padding: 5px 0;
+    }
+
+    .logoutBtn .MuiPaper-root {
+        top: 36px !important;
+    }
+
+    .inviteBoxSection .wrapBox {
+        min-height: 238px;
+        padding: 30px 10px;
+    }
+
+    .inviteBoxSection .wrapBox h3 {
+        font-size: 16px;
+    }
+
+    .inviteBoxSection .wrapBox h5 {
+        font-size: 28px;
+    }
+
+    .inviteSection {
+        padding: 70px 0;
+    }
+
+    .Deposit-Withdrawal-table .td img {
+        width: 18%;
+    }
+
+    .paddingTopfoot {
+        height: 140vh;
+    }
+
+    .paddingTopfootOp {
+        height: 420vh;
+    }
+
+}
+
+@media (max-width:376px) {
+    .currnecyBox button p.MuiTypography-body1 {
+        font-size: 10px;
+    }
+
+    .currnecyBox {
+        width: 70%;
+    }
+
+    .darktoolbar .currnecy {
+        font-size: 10px;
+    }
+
+    .paddingTB15 {
+        padding: 10px !important;
+    }
+    .darktoolbar .cValue {
+        font-size: 10px;
+    }
+
+    .balance_head .MuiTypography-body2 {
+        font-size: 0.78rem;
+    }
+
+    .userbox .userName {
+        display: none;
+    }
+}
+
+@media (min-width:993px) and  (max-width:1025px) {
+
+    .walletBlance .MuiTypography-h4 {
+        font-size: 1.9rem;
+    }
+}
+
+@media (min-width:1370px) and  (max-width:2560px) {
+
+    .mainbody.MuiContainer-maxWidthLg {
+        max-width: 100%;
+        /* padding: 0 15px; */
+    }
+}
+
+
+
+@media (max-width:992px)  {
+    .sideBar{
+        display: block;
+        width: 100%;
+        height: auto;
+        border: none;
+    }
+
+    .sideBar .coinList .list {
+        padding: 0;
+    }
+
+
+    .coinList ul li.MuiListItem-root.MuiListItem-gutters{
+        display: inline-block;
+        border-bottom: none;
+        width: 170px;
+        margin: 0 5px;
+        border: 1px solid #ddd;
+    }
+
+    .coinList ul{
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+
+    .walletpageBody {
+        display: block;
+    }
+    
+
+    
+    .rightBar {
+        width: 100%;
+        display: block;
+    }
+
+
+    
+
+
+    .deposite .title a,
+    .deposite .barcode {
+        margin-top: 15px;
+        display: block;
+    }
+
+    .bankDetails ul li {
+        padding: 10px;
+    }
+
+    .tableResponsive {
+        white-space: normal;
+        overflow-x: auto;
+        /* border: 1px solid #ddd; */
+    }
+
+    .tableResponsive table.MuiTable-root{
+        border: none;
+    }
+
+    .tradeBody .tradingLogin .MuiButton-contained{
+        font-size: 12px;
+    }
+
+}
+
+
+
+
+
+
+@media  (min-width:992px) and (min-height: 750) {
+
+    .tradeBody .tradeBox .table ul.scrollBody {
+        height: calc(100vh - 60.7vh);
+    }
+    
+    .tradeBody .orderbookData {
+        height: calc(100vh - 58.7vh);
+    }
+
+    .tradeBody .graphBox .graphData {
+        height: calc(100vh - 56.7vh);
+    }
+
+
+}
+
+
+
+
+@media (min-width:767px) and (min-height: 768px) { 
+    .tradeBody .tradeBox .table ul.scrollBody {
+        height: calc(100vh - 65.3vh);
+    }
+    
+    .tradeBody .orderbookData {
+        height: calc(100vh - 59.1vh);
+    }
+
+    .tradeBody .graphBox .graphData {
+        height: calc(100vh - 60.3vh);
+    }
+
+} 
+
+
+
+@media (min-width:767px) and (min-height: 900px) { 
+    .tradeBody .tradeBox .table ul.scrollBody {
+        height: calc(100vh - 60.5vh);
+    }
+    
+    .tradeBody .orderbookData {
+        height: calc(100vh - 58.1vh); 
+    }
+
+    .tradeBody .graphBox .graphData {
+        height: calc(100vh - 55.8vh);
+    }
+
+   
+} 
+
+
+
+@media (min-width:767px) and (min-height: 1080px) { 
+    .tradeBody .tradeBox .table ul.scrollBody {
+        height: calc(100vh - 60.7vh);
+    }
+    
+    .tradeBody .orderbookData {
+        height: calc(100vh - 58.5vh);
+    }
+
+    .tradeBody .graphBox .graphData {
+        height: calc(100vh - 57.5vh);
+    }
+
+   
+} 
+
+
+@media (min-width:767px) and (min-height: 1200px) { 
+    .tradeBody .tradeBox .table ul.scrollBody {
+        height: calc(100vh - 59.7vh);
+    }
+    
+    .tradeBody .orderbookData {
+        height: calc(100vh - 57.7vh);
+    }
+
+    .tradeBody .graphBox .graphData {
+        height: calc(100vh - 56.5vh);
+    }
+
+  
+} 
+
+
+
+@media (min-width:767px) and (min-height: 1400px) { 
+    .tradeBody .tradeBox .table ul.scrollBody {
+        height: calc(100vh - 58.5vh);
+    }
+    
+    .tradeBody .orderbookData {
+        height: calc(100vh - 56.8vh);
+    }
+
+    .tradeBody .graphBox .graphData {
+        height: calc(100vh - 55vh);
+    }
+
+    
+} 
