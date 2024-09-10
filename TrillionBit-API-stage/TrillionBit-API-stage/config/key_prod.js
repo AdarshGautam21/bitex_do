@@ -1,6 +1,6 @@
 module.exports = {
-  mongoURI: `mongodb://${process.env.MONGO_USER}:${encodeURIComponent(process.env.MONGO_PASS)}@${process.env.MONGO_HOST}:${process.env.MONGO_PORT}/${process.env.MONGO_DB}?authSource=admin`,
-  // mongoURI: `mongodb://${process.env.MONGO_HOST}:${process.env.MONGO_PORT}/${process.env.MONGO_DB}`,
+  // mongoURI: `mongodb://${process.env.MONGO_USER}:${encodeURIComponent(process.env.MONGO_PASS)}@${process.env.MONGO_HOST}:${process.env.MONGO_PORT}/${process.env.MONGO_DB}?authSource=admin`,
+  mongoURI: 'mongodb+srv://shreyanbharadwaj12:KB6WiK6B37H0MuW0@cluster0.zfddy.mongodb.net/dex',
   secretKey: process.env.SECRET_OR_KEY,
   hostURI: process.env.SERVER_URI,
   bitgoAccessKey: process.env.BITGO_ACCESS_KEY,

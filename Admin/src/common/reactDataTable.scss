@@ -1,0 +1,71 @@
+// .MuiPopover-paper {
+//     // top: 176px !important;
+//     // left: 1290px !important;
+// }
+
+.MuiChip-root {
+	margin-bottom: 10px !important;
+}
+
+.table-responsive .MuiPaper-root {
+	background-color: transparent !important;
+	// color: initial !important;
+}
+
+// .MuiTableCell-body{
+//     color: invert($color: #000000) !important;
+// }
+
+body[data-layout-mode="dark"] .MuiTableCell-body,
+body[data-layout-mode="dark"] .MuiIconButton-root,
+body[data-layout-mode="dark"] .MuiTablePagination-root,
+body[data-layout-mode="dark"] .MuiTablePagination-root .MuiSelect-icon,
+body[data-layout-mode="dark"] .MuiToolbar-root .MuiInputBase-input {
+	color: #99a4b1 !important;
+}
+
+body[data-layout-mode="dark"] .MuiTableCell-body a {
+	color: #d3dbe0 !important;
+}
+
+table tfoot tr td.MuiTableCell-root {
+	border-bottom: none;
+}
+
+body[data-layout-mode="dark"] .MuiTableHead-root tr th {
+	background-color: #363a38;
+	color: #99a4b1 !important;
+}
+
+body[data-layout-mode="dark"] .MuiToolbar-root .MuiSvgIcon-root {
+	color: #99a4b1;
+}
+
+body[data-layout-mode="dark"] .MuiTableRow-root {
+	color: #99a4b1;
+}
+body[data-layout-mode="dark"] .MuiButton-label {
+	color: #99a4b1 !important;
+}
+
+body[data-layout-mode="dark"] .MuiToolbar-root .MuiInput-underline:after,
+body[data-layout-mode="dark"] .MuiToolbar-root .MuiInput-underline:before {
+	border-bottom: 2px solid #99a4b1;
+}
+
+.MuiPopover-paper .MuiIconButton-root {
+	right: 0px;
+	top: 0px;
+	padding: 0;
+}
+
+body[data-layout-mode="dark"] .MuiPopover-paper div {
+	background-color: #363a38 !important;
+	color: #99a4b1 !important;
+}
+
+body[data-layout-mode="dark"] .MuiPopover-paper div p,
+body[data-layout-mode="dark"] .MuiPopover-paper div .MuiButton-text {
+	color: #99a4b1 !important;
+	margin: 0 !important;
+}
