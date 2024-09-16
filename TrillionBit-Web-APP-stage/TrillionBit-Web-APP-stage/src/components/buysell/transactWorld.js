@@ -1,6 +1,6 @@
 // src/api.js
 
-const API_BASE_URL = 'https://sandbox.transactworld.com/transactionServices/REST/v1'; 
+const API_BASE_URL = 'https://sandbox.transactworld.com/transactionServices/REST/v1/payments'; 
 
 export const getMerchantAuthToken = async () => {
   try {
